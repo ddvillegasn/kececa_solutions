@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/src/components/Header";
-import Footer from "@/src/components/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "KECECA SOLUTIONS - Agencia de Servicios Digitales",
-  description: "Agencia especializada en desarrollo web, diseño digital y soluciones tecnológicas innovadoras",
+  title: "KECECA SOLUTIONS - Soluciones digitales que impulsan tu negocio",
+  description: "Desarrollo web, automatización y sistemas personalizados para negocios locales, emprendedores y pequeñas empresas",
 };
 
 export default function RootLayout({
@@ -21,6 +22,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

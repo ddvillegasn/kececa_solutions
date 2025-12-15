@@ -1,51 +1,97 @@
-import ServiceCard from "@/src/components/ServiceCard";
+import ServiceCard from "@/components/ServiceCard";
 
 export default function ServiciosPage() {
   const services = [
     {
       icon: "🌐",
-      title: "Desarrollo Web",
-      description: "Creamos sitios web y aplicaciones web modernas, responsivas y optimizadas con las últimas tecnologías como React, Next.js y TypeScript."
+      title: "Desarrollo Web Profesional",
+      description: "Páginas web informativas para negocios locales, tiendas online con pasarelas de pago, catálogos digitales, diseño responsive, optimización SEO local e integración con WhatsApp, redes y Google Business.",
+      features: [
+        "Páginas web informativas",
+        "Tiendas online (e-commerce)",
+        "Catálogos digitales",
+        "Diseño responsive",
+        "SEO local",
+        "Integración WhatsApp y redes"
+      ]
     },
     {
-      icon: "📱",
-      title: "Aplicaciones Móviles",
-      description: "Desarrollo de aplicaciones móviles nativas y multiplataforma para iOS y Android con excelente experiencia de usuario."
+      icon: "⚙️",
+      title: "Automatizaciones y Flujos Inteligentes",
+      description: "Soluciones que reducen tareas repetitivas y mejoran la eficiencia operativa de tu negocio.",
+      features: [
+        "Formularios automáticos",
+        "Sistemas de reservas y agendamiento",
+        "Flujos de atención al cliente",
+        "Bots de gestión de pedidos",
+        "Respuestas automáticas",
+        "Recordatorios programados"
+      ]
     },
     {
-      icon: "🎨",
-      title: "Diseño UI/UX",
-      description: "Diseños intuitivos y atractivos centrados en el usuario, que mejoran la experiencia y aumentan la conversión."
+      icon: "💬",
+      title: "Chatbots de WhatsApp e IA",
+      description: "Atención al cliente 24/7 con chatbots personalizados conectados a bases de datos y sistemas internos.",
+      features: [
+        "Chatbots personalizados",
+        "Respuestas a preguntas frecuentes",
+        "Sistema de reservas por WhatsApp",
+        "Cotización automática",
+        "Consulta de inventario",
+        "Asistentes con IA entrenados"
+      ]
     },
     {
-      icon: "🚀",
-      title: "Marketing Digital",
-      description: "Estrategias de marketing digital personalizadas: SEO, SEM, redes sociales y contenido que genera resultados."
+      icon: "💻",
+      title: "Sistemas Personalizados",
+      description: "Desarrollo de herramientas internas a medida en cualquier lenguaje de programación según las necesidades de tu negocio.",
+      features: [
+        "Sistemas de inventarios",
+        "Cotizadores automáticos",
+        "Gestión de clientes y ventas",
+        "Paneles administrativos",
+        "Dashboards con métricas",
+        "Integración con APIs y Excel"
+      ]
     },
     {
-      icon: "☁️",
-      title: "Soluciones Cloud",
-      description: "Implementación y gestión de infraestructura en la nube con AWS, Azure y Google Cloud para escalabilidad y seguridad."
+      icon: "📈",
+      title: "Optimización de Presencia Digital",
+      description: "Mejora tu visibilidad online y reputación digital para atraer más clientes locales.",
+      features: [
+        "Gestión de Google Business",
+        "SEO local",
+        "Optimización de fichas de productos",
+        "Estrategias para reseñas",
+        "Mejora de reputación",
+        "Contenido para redes sociales"
+      ]
     },
     {
       icon: "🔧",
-      title: "Consultoría IT",
-      description: "Asesoramiento experto en tecnología, arquitectura de software y transformación digital para tu negocio."
+      title: "Mantenimiento, Soporte y Seguridad",
+      description: "Aseguramos que cada sistema se mantenga funcional, actualizado y seguro con soporte continuo.",
+      features: [
+        "Actualizaciones mensuales",
+        "Monitoreo del sitio",
+        "Copias de seguridad automáticas",
+        "Corrección de errores",
+        "Configuración de seguridad",
+        "Soporte por WhatsApp"
+      ]
     },
     {
-      icon: "🛒",
-      title: "E-commerce",
-      description: "Tiendas online completas y optimizadas para ventas, con integración de pagos y gestión de inventario."
-    },
-    {
-      icon: "📊",
-      title: "Business Intelligence",
-      description: "Análisis de datos y dashboards interactivos para toma de decisiones informadas basadas en datos reales."
-    },
-    {
-      icon: "🔐",
-      title: "Ciberseguridad",
-      description: "Protección integral de tus activos digitales con auditorías de seguridad y implementación de mejores prácticas."
+      icon: "📚",
+      title: "Capacitación y Acompañamiento",
+      description: "Entrenamiento personalizado para que puedas usar todas las herramientas instaladas de forma autónoma.",
+      features: [
+        "Entrenamiento personalizado",
+        "Manuales de uso",
+        "Video-guías paso a paso",
+        "Asesoría digital",
+        "Mejora de procesos",
+        "Reuniones de seguimiento"
+      ]
     }
   ];
 
