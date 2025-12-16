@@ -1,4 +1,4 @@
-import ProjectCard from "@/src/components/ProjectCard";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function ProyectosWebPage() {
   const projects = [
