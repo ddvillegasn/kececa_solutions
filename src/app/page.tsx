@@ -14,13 +14,19 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-        {/* Gradient Background - Sin video por tamaño */}
+        {/* Video Background - Más visible */}
         <div className="absolute inset-0 w-full h-full overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-red-900/40 via-black to-purple-900/40"></div>
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-red-500 rounded-full filter blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl animate-pulse"></div>
-          </div>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover opacity-70"
+          >
+            <source src="/assets/videos/red neuronal roja.mp4" type="video/mp4" />
+          </video>
+          {/* Overlay más sutil para que se vea el video */}
+          <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-transparent to-black/60" />
         </div>
         
         {/* 3D Background */}
@@ -249,13 +255,17 @@ export default function Home() {
             {/* Video & Imágenes */}
             <FadeIn direction="left">
               <div className="relative">
-                {/* Imagen Principal */}
+                {/* Video Principal */}
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                  <img 
-                    src="/assets/images/oficina trabajo.jpg" 
-                    alt="Equipo trabajando"
-                    className="w-full h-auto object-cover"
-                  />
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-auto"
+                  >
+                    <source src="/assets/videos/trabajando en oficina.mp4" type="video/mp4" />
+                  </video>
                 </div>
                 
                 {/* Imagen Flotante */}
