@@ -67,6 +67,22 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Nueva sección profesional y atractiva */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-100 dark:from-gray-900 dark:to-blue-900">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <TextReveal className="text-4xl md:text-6xl font-bold mb-12 text-center leading-tight text-blue-900 dark:text-white">
+              Tu crecimiento digital, nuestra prioridad
+            </TextReveal>
+            <FadeIn delay={0.2}>
+              <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-200 text-center leading-relaxed">
+                Impulsamos negocios con tecnología, creatividad y acompañamiento real. Descubre cómo una estrategia digital bien ejecutada puede abrir nuevas oportunidades y llevar tu empresa al siguiente nivel.
+              </p>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
       {/* Proyectos Destacados - Visual Grid como Immersive Studios */}
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
@@ -151,10 +167,12 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <TextReveal className="text-4xl md:text-5xl font-bold mb-4 text-white">
-              Nuestros Servicios
+              Servicios digitales que impulsan tu negocio
             </TextReveal>
             <FadeIn delay={0.2}>
-              <p className="text-xl text-gray-300">Tecnología que transforma tu negocio</p>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Soluciones tecnológicas integrales: desarrollo web, automatización, chatbots y sistemas personalizados para el crecimiento real de tu empresa.
+              </p>
             </FadeIn>
           </div>
           
@@ -270,28 +288,13 @@ export default function Home() {
                 </p>
               </FadeIn>
 
-              <FadeIn delay={0.7}>
-                <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-3 bg-blue-50 dark:bg-blue-900/20 px-6 py-3 rounded-full">
-                    <span className="text-2xl">✅</span>
-                    <span className="font-semibold text-gray-900 dark:text-white">Desarrollo Profesional</span>
-                  </div>
-                  <div className="flex items-center gap-3 bg-purple-50 dark:bg-purple-900/20 px-6 py-3 rounded-full">
-                    <span className="text-2xl">⚡</span>
-                    <span className="font-semibold text-gray-900 dark:text-white">Automatización Total</span>
-                  </div>
-                  <div className="flex items-center gap-3 bg-green-50 dark:bg-green-900/20 px-6 py-3 rounded-full">
-                    <span className="text-2xl">🤖</span>
-                    <span className="font-semibold text-gray-900 dark:text-white">IA & Chatbots</span>
-                  </div>
-                </div>
-              </FadeIn>
+              {/* Eliminado: íconos/frases sueltas para un enfoque más profesional */}
 
               <FadeIn delay={0.9}>
-                <div className="mt-8">
+                <div className="flex justify-center mt-12">
                   <a
                     href="/empresa"
-                    className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full hover:scale-105 hover:shadow-2xl transition-all"
+                    className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full hover:scale-105 hover:shadow-2xl transition-all text-lg"
                   >
                     Conoce más sobre nosotros
                   </a>

@@ -32,9 +32,9 @@ export default function Header() {
           {/* Logo - Más grande y visible */}
           <Link href="/" className="flex items-center space-x-2 group -my-2">
             <img 
-              src="/assets/images/png blanco.png" 
+              src="/assets/images/Logo integra.png" 
               alt="INTEGRA SOLUTIONS" 
-              className="h-24 md:h-28 w-auto transition-transform duration-300 group-hover:scale-110 drop-shadow-2xl"
+              className="h-32 md:h-40 w-auto transition-transform duration-300 group-hover:scale-110 drop-shadow-2xl"
             />
           </Link>
 

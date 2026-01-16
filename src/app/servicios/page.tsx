@@ -5,94 +5,85 @@ export default function ServiciosPage() {
     {
       icon: "🌐",
       title: "Desarrollo Web Profesional",
-      description: "Páginas web informativas para negocios locales, tiendas online con pasarelas de pago, catálogos digitales, diseño responsive, optimización SEO local e integración con WhatsApp, redes y Google Business.",
+      description: "Diseñamos y desarrollamos páginas web modernas, rápidas y orientadas a resultados, adaptadas a negocios locales, emprendedores y pequeñas empresas.",
       features: [
-        "Páginas web informativas",
-        "Tiendas online (e-commerce)",
-        "Catálogos digitales",
-        "Diseño responsive",
-        "SEO local",
-        "Integración WhatsApp y redes"
+        "Páginas web informativas, landing pages y sitios corporativos",
+        "Tiendas online (e-commerce) con pasarelas de pago",
+        "Catálogos digitales de productos o servicios",
+        "Diseño responsive (adaptado a celular, tablet y PC)",
+        "Optimización SEO local para aparecer en Google",
+        "Integración con WhatsApp, redes sociales y Google Business",
+        "Enfoque en experiencia de usuario y conversión",
+        "Ideal para negocios que necesitan presencia digital real, no solo una página bonita"
       ]
     },
     {
       icon: "⚙️",
       title: "Automatizaciones y Flujos Inteligentes",
-      description: "Soluciones que reducen tareas repetitivas y mejoran la eficiencia operativa de tu negocio.",
+      description: "Creamos automatizaciones personalizadas que eliminan tareas manuales y mejoran la eficiencia operativa de tu negocio.",
       features: [
-        "Formularios automáticos",
+        "Automatización de formularios y registros",
         "Sistemas de reservas y agendamiento",
-        "Flujos de atención al cliente",
-        "Bots de gestión de pedidos",
-        "Respuestas automáticas",
-        "Recordatorios programados"
+        "Flujos automáticos de atención al cliente",
+        "Envío automático de correos, mensajes o notificaciones",
+        "Integración entre herramientas (web, WhatsApp, hojas de cálculo, sistemas internos)",
+        "Menos trabajo manual, más tiempo para hacer crecer tu negocio"
       ]
     },
     {
       icon: "💬",
-      title: "Chatbots de WhatsApp e IA",
-      description: "Atención al cliente 24/7 con chatbots personalizados conectados a bases de datos y sistemas internos.",
+      title: "Chatbots de WhatsApp e Inteligencia Artificial",
+      description: "Desarrollamos chatbots inteligentes 24/7, diseñados específicamente para tu negocio y tus clientes.",
       features: [
-        "Chatbots personalizados",
-        "Respuestas a preguntas frecuentes",
-        "Sistema de reservas por WhatsApp",
-        "Cotización automática",
-        "Consulta de inventario",
-        "Asistentes con IA entrenados"
+        "Chatbots de WhatsApp personalizados",
+        "Respuestas automáticas a preguntas frecuentes",
+        "Bots para cotizar, reservar, consultar inventario o servicios",
+        "Integración con bases de datos y sistemas internos",
+        "Asistentes con IA entrenados para tu negocio",
+        "Atención constante sin depender de una persona conectada todo el día"
       ]
     },
     {
       icon: "💻",
-      title: "Sistemas Personalizados",
-      description: "Desarrollo de herramientas internas a medida en cualquier lenguaje de programación según las necesidades de tu negocio.",
+      title: "Sistemas Personalizados a Medida",
+      description: "Desarrollamos sistemas internos y herramientas digitales personalizadas, utilizando el lenguaje y la tecnología más adecuada según el caso (no nos limitamos a uno solo).",
       features: [
         "Sistemas de inventarios",
         "Cotizadores automáticos",
-        "Gestión de clientes y ventas",
-        "Paneles administrativos",
-        "Dashboards con métricas",
-        "Integración con APIs y Excel"
+        "Gestión de clientes, ventas o proveedores",
+        "Paneles administrativos y dashboards",
+        "Integración con APIs, Excel o bases de datos",
+        "Soluciones a medida para procesos específicos del negocio",
+        "Digitalizamos procesos que hoy se hacen en Excel, papel o de forma manual"
       ]
     },
     {
       icon: "📈",
       title: "Optimización de Presencia Digital",
-      description: "Mejora tu visibilidad online y reputación digital para atraer más clientes locales.",
+      description: "Ayudamos a que tu negocio sea visible, confiable y fácil de encontrar en internet.",
       features: [
-        "Gestión de Google Business",
-        "SEO local",
-        "Optimización de fichas de productos",
-        "Estrategias para reseñas",
-        "Mejora de reputación",
-        "Contenido para redes sociales"
+        "Optimización de Google Business",
+        "SEO local para búsquedas cercanas",
+        "Mejora de reputación digital y reseñas",
+        "Optimización de fichas de servicios y productos",
+        "Estrategias básicas de visibilidad online",
+        "Más visibilidad local = más clientes reales"
       ]
     },
     {
       icon: "🔧",
       title: "Mantenimiento, Soporte y Seguridad",
-      description: "Aseguramos que cada sistema se mantenga funcional, actualizado y seguro con soporte continuo.",
+      description: "Nos encargamos de que tus sistemas estén siempre funcionando correctamente y protegidos.",
       features: [
-        "Actualizaciones mensuales",
-        "Monitoreo del sitio",
+        "Actualizaciones periódicas de páginas y sistemas",
+        "Monitoreo básico de funcionamiento",
         "Copias de seguridad automáticas",
-        "Corrección de errores",
-        "Configuración de seguridad",
-        "Soporte por WhatsApp"
+        "Corrección de errores y mejoras continuas",
+        "Configuración de medidas básicas de seguridad",
+        "Soporte técnico por WhatsApp o correo",
+        "Tranquilidad técnica para que no te preocupes por fallos o caídas"
       ]
     },
-    {
-      icon: "📚",
-      title: "Capacitación y Acompañamiento",
-      description: "Entrenamiento personalizado para que puedas usar todas las herramientas instaladas de forma autónoma.",
-      features: [
-        "Entrenamiento personalizado",
-        "Manuales de uso",
-        "Video-guías paso a paso",
-        "Asesoría digital",
-        "Mejora de procesos",
-        "Reuniones de seguimiento"
-      ]
-    }
   ];
 
   return (
@@ -100,8 +91,8 @@ export default function ServiciosPage() {
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">Nuestros Servicios</h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Ofrecemos una amplia gama de servicios digitales diseñados para impulsar 
-          tu negocio y alcanzar tus objetivos en el mundo digital.
+          No solo creamos páginas web atractivas: desarrollamos sistemas completos, automatizaciones inteligentes y chatbots con IA que optimizan tu operación y mejoran la experiencia de tus clientes. <br />
+          Ofrecemos soluciones digitales integrales para que tu negocio crezca, sea más eficiente y destaque en el entorno digital actual.
         </p>
       </div>
 
@@ -112,6 +103,7 @@ export default function ServiciosPage() {
             icon={service.icon}
             title={service.title}
             description={service.description}
+            features={service.features}
           />
         ))}
       </div>
