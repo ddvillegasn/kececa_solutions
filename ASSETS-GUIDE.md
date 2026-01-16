@@ -1,4 +1,4 @@
-# 📸 Guía de Assets para KECECA SOLUTIONS
+# 📸 Guía de Assets para INTEGRA SOLUTIONS
 
 ## 🎯 Assets Necesarios para tu Página Web
 
@@ -77,7 +77,7 @@ Esta guía te indica exactamente qué imágenes y videos necesitas para que tu p
 
 ### Logos y Branding:
 
-1. **logo-kececa.svg o logo-kececa.png** (REQUERIDO)
+1. **logo-integra.svg o logo-integra.png** (REQUERIDO)
    - Tu logo oficial
    - Formato SVG (preferido) o PNG con fondo transparente
    - Tamaño: 500x500px si es PNG
@@ -158,7 +158,7 @@ Esta guía te indica exactamente qué imágenes y videos necesitas para que tu p
 
 ### Prioridad ALTA (necesario para que la página funcione):
 - [ ] 5 imágenes de proyectos (ecommerce, inventory, chatbot, corporate, automation)
-- [ ] logo-kececa (PNG o SVG)
+- [ ] logo-integra (PNG o SVG)
 - [ ] logo-white (PNG o SVG)
 - [ ] hero-background.mp4 (video de fondo)
 - [ ] hero-fallback.jpg (imagen de respaldo)

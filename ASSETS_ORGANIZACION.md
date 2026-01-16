@@ -1,4 +1,4 @@
-# 📋 Resumen de Organización de Assets - KECECA SOLUTIONS
+# 📋 Resumen de Organización de Assets - INTEGRA SOLUTIONS
 
 ## ✅ IMÁGENES Y VIDEOS INTEGRADOS
 

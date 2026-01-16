@@ -33,7 +33,7 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-2 group -my-2">
             <img 
               src="/assets/images/png blanco.png" 
-              alt="KECECA SOLUTIONS" 
+              alt="INTEGRA SOLUTIONS" 
               className="h-24 md:h-28 w-auto transition-transform duration-300 group-hover:scale-110 drop-shadow-2xl"
             />
           </Link>

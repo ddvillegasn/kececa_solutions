@@ -8,7 +8,7 @@ export default function EmpresaPage() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4 text-blue-600">Misión</h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-            En KECECA SOLUTIONS, nuestra misión es transformar las ideas de nuestros clientes en 
+            En INTEGRA SOLUTIONS, nuestra misión es transformar las ideas de nuestros clientes en 
             soluciones digitales innovadoras y efectivas. Nos comprometemos a ofrecer servicios 
             de alta calidad que impulsen el crecimiento y éxito de cada proyecto.
           </p>

@@ -12,7 +12,7 @@ export default function ClientesPage() {
     {
       name: "María González",
       company: "TechCorp",
-      text: "KECECA SOLUTIONS transformó completamente nuestra presencia digital. El equipo es profesional y altamente capacitado.",
+      text: "INTEGRA SOLUTIONS transformó completamente nuestra presencia digital. El equipo es profesional y altamente capacitado.",
       rating: 5
     },
     {
@@ -85,7 +85,7 @@ export default function ClientesPage() {
       {/* CTA */}
       <div className="mt-16 text-center bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl p-12">
         <h2 className="text-3xl font-bold mb-4">¿Quieres ser nuestro próximo caso de éxito?</h2>
-        <p className="text-xl mb-8">Únete a las empresas que ya confían en KECECA SOLUTIONS</p>
+        <p className="text-xl mb-8">Únete a las empresas que ya confían en INTEGRA SOLUTIONS</p>
         <a
           href="/contactenos"
           className="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-semibold inline-block"

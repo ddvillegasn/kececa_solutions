@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "KECECA SOLUTIONS - Soluciones digitales que impulsan tu negocio",
+  title: "INTEGRA SOLUTIONS - Soluciones digitales que impulsan tu negocio",
   description: "Desarrollo web, automatización y sistemas personalizados para negocios locales, emprendedores y pequeñas empresas",
 };
 

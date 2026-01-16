@@ -1,4 +1,4 @@
-# KECECA SOLUTIONS
+# INTEGRA SOLUTIONS
 
 Agencia de Servicios Digitales moderna desarrollada con Next.js 15 y React 19.
 

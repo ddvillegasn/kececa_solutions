@@ -150,8 +150,8 @@ export default function ContactenosPage() {
                 <div className="text-3xl">📧</div>
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
-                  <p className="opacity-90">info@kececasolutions.com</p>
-                  <p className="opacity-90">soporte@kececasolutions.com</p>
+                  <p className="opacity-90">info@integrasolutions.com</p>
+                  <p className="opacity-90">soporte@integrasolutions.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">

@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              KECECA SOLUTIONS
+              INTEGRA SOLUTIONS
             </h3>
             <p className="text-gray-400 mb-4">
               Transformando ideas en soluciones digitales innovadoras.
@@ -54,7 +54,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contacto</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>📧 info@kececasolutions.com</li>
+              <li>📧 info@integrasolutions.com</li>
               <li>📱 +51 999 999 999</li>
               <li>📍 Lima, Perú</li>
             </ul>
@@ -63,7 +63,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} KECECA SOLUTIONS. Todos los derechos reservados.</p>
+          <p>&copy; {currentYear} INTEGRA SOLUTIONS. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
