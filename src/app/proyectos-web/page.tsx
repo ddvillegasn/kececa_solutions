@@ -5,6 +5,22 @@ import ModalGaleria from "@/components/ModalGaleria";
 
 export default function ProyectosWebPage() {
   const projects = [
+        {
+          title: "Conexa – Plataforma Web de Gestión de Recursos Humanos",
+          description: "Plataforma web modular para centralizar y optimizar procesos de RRHH en empresas modernas.",
+          tags: ["Flask", "RRHH", "Contratación", "Liquidaciones", "Evaluación", "Web Modular"],
+          detalle: `Conexa es una plataforma web de gestión de recursos humanos (RRHH) diseñada para centralizar, organizar y optimizar los procesos administrativos de una empresa. La solución permite administrar de forma estructurada la información del personal, los procesos de selección y contratación, así como el seguimiento laboral de los colaboradores.\n\nEl sistema cuenta con una interfaz web modular que integra distintos componentes clave del área de RRHH, facilitando el control de datos, la trazabilidad de procesos y la toma de decisiones. Conexa está pensada como una herramienta interna que reduce el manejo manual de información y mejora la eficiencia operativa.\n\n**Funcionalidades principales**\n\n- Gestión de empleados: registro, consulta y administración de información del personal.\n- Selección y reclutamiento: manejo de vacantes, candidatos y procesos de selección.\n- Contratación: control y seguimiento de contratos laborales.\n- Seguridad social: administración de afiliaciones y estados relacionados.\n- Liquidaciones laborales: cálculo y gestión de liquidaciones.\n- Capacitación: registro de programas de formación y participantes.\n- Evaluación de desempeño: creación y almacenamiento de evaluaciones internas.\n\n**Tecnologías utilizadas**\n\n- Aplicación web desarrollada con Flask\n- Backend estructurado con lógica de servidor\n- Plantillas HTML y recursos estáticos (CSS y JavaScript)\n- Base de datos para persistencia de información\n- Arquitectura organizada para facilitar mantenimiento y escalabilidad\n\n**Valor del proyecto**\n\nConexa demuestra la capacidad de desarrollar sistemas empresariales personalizados, enfocados en resolver necesidades reales de gestión interna, con una arquitectura clara y preparada para ampliaciones futuras.`,
+          images: [
+            "/assets/images/CONEXA FOTOS/PRINCIPAL CONEXA.jpg",
+            "/assets/images/CONEXA FOTOS/inicio.png",
+            "/assets/images/CONEXA FOTOS/MODULOS.png",
+            "/assets/images/CONEXA FOTOS/SECCION SELECCION.png",
+            "/assets/images/CONEXA FOTOS/SECCION CONTRATO.png",
+            "/assets/images/CONEXA FOTOS/AFILIACIONES.png",
+            "/assets/images/CONEXA FOTOS/BENEFICIOS.png",
+            "/assets/images/CONEXA FOTOS/LIQUIDACIONES.png"
+          ]
+        },
     {
       title: "Sistema de Gestión Web – Arabela Espectáculos",
       description: "Sistema web básico para gestión interna, inventario y vestuarios con login seguro. Simple, funcional y orientado a optimizar procesos internos.",
@@ -64,9 +80,11 @@ export default function ProyectosWebPage() {
 
   // Estado para modal de galería
   const [modalOpen, setModalOpen] = useState(false);
-  const arabela = projects[0];
+  const [modalConexaOpen, setModalConexaOpen] = useState(false);
+  const arabela = projects.find(p => p.title.includes('Arabela'));
+  const conexa = projects.find(p => p.title.includes('Conexa'));
   return (
-    <div className="container mx-auto px-4 py-16">
+    <div className="container mx-auto px-4 pt-32 pb-16">
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">Proyectos Web</h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
@@ -94,22 +112,45 @@ export default function ProyectosWebPage() {
         <h2 className="text-3xl font-bold mb-8">Proyectos Destacados</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Arabela con modal */}
-          <div>
-            <ProjectCard
-              title={arabela.title}
-              description={arabela.description}
-              tags={arabela.tags}
-              image={"/assets/images/ARABELA FOTOS/PRINCIPAL INVENTARIO.jpg"}
-            />
-            <button
-              className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-              onClick={() => setModalOpen(true)}
-            >
-              Ver Proyecto →
-            </button>
-          </div>
+          {arabela && (
+            <div className="flex flex-col h-full">
+              <div className="flex-1 flex flex-col">
+                <ProjectCard
+                  title={arabela.title}
+                  description={arabela.description}
+                  tags={arabela.tags}
+                  image={"/assets/images/ARABELA FOTOS/PRINCIPAL INVENTARIO.jpg"}
+                />
+              </div>
+              <button
+                className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                onClick={() => setModalOpen(true)}
+              >
+                Ver Proyecto →
+              </button>
+            </div>
+          )}
+          {/* Conexa con modal */}
+          {conexa && (
+            <div className="flex flex-col h-full">
+              <div className="flex-1 flex flex-col">
+                <ProjectCard
+                  title={conexa.title}
+                  description={conexa.description}
+                  tags={conexa.tags}
+                  image={Array.isArray(conexa.images) ? conexa.images[0] : undefined}
+                />
+              </div>
+              <button
+                className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                onClick={() => setModalConexaOpen(true)}
+              >
+                Ver Proyecto →
+              </button>
+            </div>
+          )}
           {/* Otros proyectos */}
-          {projects.slice(1).map((project, index) => (
+          {projects.filter(p => p !== arabela && p !== conexa).map((project, index) => (
             <ProjectCard
               key={index}
               title={project.title}
@@ -121,14 +162,27 @@ export default function ProyectosWebPage() {
           ))}
         </div>
         {/* Modal Galería para Arabela */}
-        <ModalGaleria
-          isOpen={modalOpen}
-          onClose={() => setModalOpen(false)}
-          images={Array.isArray(arabela.images) ? arabela.images : []}
-          title={arabela.title}
-          // @ts-ignore
-          description={arabela.detalle}
-        />
+        {arabela && (
+          <ModalGaleria
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            images={Array.isArray(arabela.images) ? arabela.images : []}
+            title={arabela.title}
+            // @ts-ignore
+            description={arabela.detalle}
+          />
+        )}
+        {/* Modal Galería para Conexa */}
+        {conexa && (
+          <ModalGaleria
+            isOpen={modalConexaOpen}
+            onClose={() => setModalConexaOpen(false)}
+            images={Array.isArray(conexa.images) ? conexa.images.slice(1) : []}
+            title={conexa.title}
+            // @ts-ignore
+            description={conexa.detalle}
+          />
+        )}
       </section>
 
       {/* Process */}

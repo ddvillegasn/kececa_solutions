@@ -127,6 +127,14 @@ export default function Home() {
               },
               {
                 id: 2,
+                title: 'Conexa: Gestión RRHH',
+                subtitle: 'Plataforma modular para recursos humanos',
+                image: '/assets/images/CONEXA FOTOS/PRINCIPAL CONEXA.jpg',
+                category: 'Sistemas Empresariales',
+                size: 'small',
+              },
+              {
+                id: 3,
                 title: 'E-commerce Premium',
                 subtitle: 'Tienda online con pasarela de pagos',
                 image: '/assets/projects/ecommerce.jpg',
@@ -134,7 +142,7 @@ export default function Home() {
                 size: 'medium',
               },
               {
-                id: 3,
+                id: 4,
                 title: 'Sistema de Inventarios',
                 subtitle: 'Dashboard administrativo personalizado',
                 image: '/assets/projects/inventory.jpg',
@@ -142,7 +150,7 @@ export default function Home() {
                 size: 'small',
               },
               {
-                id: 4,
+                id: 5,
                 title: 'Chatbot WhatsApp',
                 subtitle: 'Atención 24/7 con IA',
                 image: '/assets/projects/chatbot.jpg',
@@ -150,7 +158,7 @@ export default function Home() {
                 size: 'small',
               },
               {
-                id: 5,
+                id: 6,
                 title: 'Web Corporativa',
                 subtitle: 'Presencia digital profesional',
                 image: '/assets/projects/corporate.jpg',
