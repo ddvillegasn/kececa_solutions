@@ -4,23 +4,24 @@ import ProjectCard from "@/components/ProjectCard";
 import ModalGaleria from "@/components/ModalGaleria";
 
 export default function ProyectosWebPage() {
+
   const projects = [
-        {
-          title: "Conexa – Plataforma Web de Gestión de Recursos Humanos",
-          description: "Plataforma web modular para centralizar y optimizar procesos de RRHH en empresas modernas.",
-          tags: ["Flask", "RRHH", "Contratación", "Liquidaciones", "Evaluación", "Web Modular"],
-          detalle: `Conexa es una plataforma web de gestión de recursos humanos (RRHH) diseñada para centralizar, organizar y optimizar los procesos administrativos de una empresa. La solución permite administrar de forma estructurada la información del personal, los procesos de selección y contratación, así como el seguimiento laboral de los colaboradores.\n\nEl sistema cuenta con una interfaz web modular que integra distintos componentes clave del área de RRHH, facilitando el control de datos, la trazabilidad de procesos y la toma de decisiones. Conexa está pensada como una herramienta interna que reduce el manejo manual de información y mejora la eficiencia operativa.\n\n**Funcionalidades principales**\n\n- Gestión de empleados: registro, consulta y administración de información del personal.\n- Selección y reclutamiento: manejo de vacantes, candidatos y procesos de selección.\n- Contratación: control y seguimiento de contratos laborales.\n- Seguridad social: administración de afiliaciones y estados relacionados.\n- Liquidaciones laborales: cálculo y gestión de liquidaciones.\n- Capacitación: registro de programas de formación y participantes.\n- Evaluación de desempeño: creación y almacenamiento de evaluaciones internas.\n\n**Tecnologías utilizadas**\n\n- Aplicación web desarrollada con Flask\n- Backend estructurado con lógica de servidor\n- Plantillas HTML y recursos estáticos (CSS y JavaScript)\n- Base de datos para persistencia de información\n- Arquitectura organizada para facilitar mantenimiento y escalabilidad\n\n**Valor del proyecto**\n\nConexa demuestra la capacidad de desarrollar sistemas empresariales personalizados, enfocados en resolver necesidades reales de gestión interna, con una arquitectura clara y preparada para ampliaciones futuras.`,
-          images: [
-            "/assets/images/CONEXA FOTOS/PRINCIPAL CONEXA.jpg",
-            "/assets/images/CONEXA FOTOS/inicio.png",
-            "/assets/images/CONEXA FOTOS/MODULOS.png",
-            "/assets/images/CONEXA FOTOS/SECCION SELECCION.png",
-            "/assets/images/CONEXA FOTOS/SECCION CONTRATO.png",
-            "/assets/images/CONEXA FOTOS/AFILIACIONES.png",
-            "/assets/images/CONEXA FOTOS/BENEFICIOS.png",
-            "/assets/images/CONEXA FOTOS/LIQUIDACIONES.png"
-          ]
-        },
+    {
+      title: "Conexa – Plataforma Web de Gestión de Recursos Humanos",
+      description: "Plataforma web modular para centralizar y optimizar procesos de RRHH en empresas modernas.",
+      tags: ["Flask", "RRHH", "Contratación", "Liquidaciones", "Evaluación", "Web Modular"],
+      detalle: `Conexa es una plataforma web de gestión de recursos humanos (RRHH) diseñada para centralizar, organizar y optimizar los procesos administrativos de una empresa. La solución permite administrar de forma estructurada la información del personal, los procesos de selección y contratación, así como el seguimiento laboral de los colaboradores.\n\nEl sistema cuenta con una interfaz web modular que integra distintos componentes clave del área de RRHH, facilitando el control de datos, la trazabilidad de procesos y la toma de decisiones. Conexa está pensada como una herramienta interna que reduce el manejo manual de información y mejora la eficiencia operativa.\n\n**Funcionalidades principales**\n\n- Gestión de empleados: registro, consulta y administración de información del personal.\n- Selección y reclutamiento: manejo de vacantes, candidatos y procesos de selección.\n- Contratación: control y seguimiento de contratos laborales.\n- Seguridad social: administración de afiliaciones y estados relacionados.\n- Liquidaciones laborales: cálculo y gestión de liquidaciones.\n- Capacitación: registro de programas de formación y participantes.\n- Evaluación de desempeño: creación y almacenamiento de evaluaciones internas.\n\n**Tecnologías utilizadas**\n\n- Aplicación web desarrollada con Flask\n- Backend estructurado con lógica de servidor\n- Plantillas HTML y recursos estáticos (CSS y JavaScript)\n- Base de datos para persistencia de información\n- Arquitectura organizada para facilitar mantenimiento y escalabilidad\n\n**Valor del proyecto**\n\nConexa demuestra la capacidad de desarrollar sistemas empresariales personalizados, enfocados en resolver necesidades reales de gestión interna, con una arquitectura clara y preparada para ampliaciones futuras.`,
+      images: [
+        "/assets/images/CONEXA FOTOS/PRINCIPAL CONEXA.jpg",
+        "/assets/images/CONEXA FOTOS/inicio.png",
+        "/assets/images/CONEXA FOTOS/MODULOS.png",
+        "/assets/images/CONEXA FOTOS/SECCION SELECCION.png",
+        "/assets/images/CONEXA FOTOS/SECCION CONTRATO.png",
+        "/assets/images/CONEXA FOTOS/AFILIACIONES.png",
+        "/assets/images/CONEXA FOTOS/BENEFICIOS.png",
+        "/assets/images/CONEXA FOTOS/LIQUIDACIONES.png"
+      ]
+    },
     {
       title: "Sistema de Gestión Web – Arabela Espectáculos",
       description: "Sistema web básico para gestión interna, inventario y vestuarios con login seguro. Simple, funcional y orientado a optimizar procesos internos.",
@@ -34,10 +35,18 @@ export default function ProyectosWebPage() {
       link: "https://arabela.page.gd/login.php"
     },
     {
-      title: "E-commerce Fashion",
-      description: "Tienda online completa para marca de moda con sistema de inventario y pagos integrados.",
-      tags: ["Next.js", "Stripe", "Tailwind CSS"],
-      link: "#"
+      title: "Medidino – Sistema Integral de Gestión Médica",
+      description: "Sistema web para gestión integral de información médica en clínicas, consultorios y farmacias.",
+      tags: ["Backend modular", "Web interactiva", "Inventario", "Pacientes", "Recetas"],
+        detalle: `Medidino es un sistema web para la gestión integral de información médica, diseñado para apoyar a clínicas, consultorios y farmacias en la digitalización y control de sus procesos operativos. La plataforma centraliza la administración de pacientes, médicos, recetas y medicamentos, permitiendo un manejo organizado, seguro y trazable de la información clínica.\n\nEl sistema facilita la emisión y consulta de recetas médicas, el seguimiento del historial de pacientes y el control de inventarios de medicamentos, optimizando los flujos de trabajo y reduciendo errores derivados de la gestión manual.\n\n🔧 **Funcionalidades principales**\n\n- Gestión de pacientes: registro y consulta de información médica e historial clínico.\n- Gestión de médicos: administración de datos profesionales y asignaciones.\n- Recetas médicas: creación, consulta y control de recetas emitidas.\n- Medicamentos e inventario: control de stock, alertas y disponibilidad.\n- Reportes: generación de informes operativos y médicos.\n- Trazabilidad: seguimiento claro de la información y acciones realizadas en el sistema.\n\n🛠️ **Tecnologías utilizadas**\n\n- Backend desarrollado con arquitectura web modular\n- Integración de múltiples lenguajes para distintos componentes del sistema\n- Interfaz web interactiva y responsiva\n- Estructura preparada para crecimiento y adaptación a distintos entornos clínicos\n\n(La tecnología se selecciona según la necesidad del proyecto, priorizando estabilidad, seguridad y escalabilidad.)\n\n💡 **Valor del proyecto**\n\nMedidino demuestra la capacidad de KECECA Solutions para desarrollar sistemas personalizados para sectores críticos, como el ámbito de la salud, donde la organización de la información, la trazabilidad y la eficiencia son fundamentales.`,
+      images: [
+        "/assets/images/MEDIDINO FOTOS/PRINCIPAL MEDIDINO.jpg",
+        "/assets/images/MEDIDINO FOTOS/HOME .png",
+        "/assets/images/MEDIDINO FOTOS/medicamento.png",
+        "/assets/images/MEDIDINO FOTOS/medico.png",
+        "/assets/images/MEDIDINO FOTOS/paciente.png",
+        "/assets/images/MEDIDINO FOTOS/historial.png"
+      ]
     },
     {
       title: "Plataforma Educativa",
@@ -70,6 +79,8 @@ export default function ProyectosWebPage() {
       link: "#"
     }
   ];
+
+  const [modalMedidinoOpen, setModalMedidinoOpen] = useState(false);
 
   const stats = [
     { number: "50+", label: "Proyectos Completados" },
@@ -149,8 +160,27 @@ export default function ProyectosWebPage() {
               </button>
             </div>
           )}
-          {/* Otros proyectos */}
-          {projects.filter(p => p !== arabela && p !== conexa).map((project, index) => (
+          {/* Medidino con modal (tercer cuadro) */}
+          {projects.filter(p => p.title.includes('Medidino')).map((medidino, index) => (
+            <div className="flex flex-col h-full" key={index}>
+              <div className="flex-1 flex flex-col">
+                <ProjectCard
+                  title={medidino.title}
+                  description={medidino.description}
+                  tags={medidino.tags}
+                  image={Array.isArray(medidino.images) ? medidino.images[0] : undefined}
+                />
+              </div>
+              <button
+                className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                onClick={() => setModalMedidinoOpen(true)}
+              >
+                Ver Proyecto →
+              </button>
+            </div>
+          ))}
+          {/* Otros proyectos (excepto Arabela, Conexa, Medidino) */}
+          {projects.filter(p => p !== arabela && p !== conexa && !p.title.includes('Medidino')).map((project, index) => (
             <ProjectCard
               key={index}
               title={project.title}
@@ -160,6 +190,21 @@ export default function ProyectosWebPage() {
               image={Array.isArray(project.images) ? project.images[0] : undefined}
             />
           ))}
+                {/* Modal Galería para Medidino */}
+                {(() => {
+                  const medidino = projects.find(p => p.title.includes('Medidino'));
+                  if (!medidino) return null;
+                  return (
+                    <ModalGaleria
+                      isOpen={modalMedidinoOpen}
+                      onClose={() => setModalMedidinoOpen(false)}
+                      images={medidino.images ?? []}
+                      title={medidino.title ?? "Medidino"}
+                      // @ts-ignore
+                      description={medidino.detalle ?? ""}
+                    />
+                  );
+                })()}
         </div>
         {/* Modal Galería para Arabela */}
         {arabela && (
