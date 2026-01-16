@@ -115,19 +115,19 @@ export default function Home() {
               },
               {
                 id: 3,
+                title: 'Vitalis: Gestión Médica',
+                subtitle: 'Plataforma web para gestión integral de pacientes, médicos y recetas en clínicas y consultorios.',
+                image: '/assets/images/vitalis fotos/PORTADA VITALIS.jpg',
+                category: 'Salud Digital',
+                size: 'small',
+              },
+              {
+                id: 4,
                 title: 'Medidino: E-commerce Salud',
                 subtitle: 'Sistema web para gestión médica integral en clínicas y farmacias.',
                 image: '/assets/images/MEDIDINO FOTOS/PRINCIPAL MEDIDINO.jpg',
                 category: 'E-commerce Salud',
                 size: 'medium',
-              },
-              {
-                id: 4,
-                title: 'Sistema de Inventarios',
-                subtitle: 'Dashboard administrativo personalizado',
-                image: '/assets/projects/inventory.jpg',
-                category: 'Sistemas Personalizados',
-                size: 'small',
               },
               {
                 id: 5,

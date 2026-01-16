@@ -5,6 +5,9 @@ import ModalGaleria from "@/components/ModalGaleria";
 
 export default function ProyectosWebPage() {
 
+  // Estado para modal de incapacidades
+  const [modalIncapacidadesOpen, setModalIncapacidadesOpen] = useState(false);
+
   const projects = [
     {
       title: "Conexa – Plataforma Web de Gestión de Recursos Humanos",
@@ -40,7 +43,6 @@ export default function ProyectosWebPage() {
       tags: ["Backend modular", "Web interactiva", "Inventario", "Pacientes", "Recetas"],
         detalle: `Medidino es un sistema web para la gestión integral de información médica, diseñado para apoyar a clínicas, consultorios y farmacias en la digitalización y control de sus procesos operativos. La plataforma centraliza la administración de pacientes, médicos, recetas y medicamentos, permitiendo un manejo organizado, seguro y trazable de la información clínica.\n\nEl sistema facilita la emisión y consulta de recetas médicas, el seguimiento del historial de pacientes y el control de inventarios de medicamentos, optimizando los flujos de trabajo y reduciendo errores derivados de la gestión manual.\n\n🔧 **Funcionalidades principales**\n\n- Gestión de pacientes: registro y consulta de información médica e historial clínico.\n- Gestión de médicos: administración de datos profesionales y asignaciones.\n- Recetas médicas: creación, consulta y control de recetas emitidas.\n- Medicamentos e inventario: control de stock, alertas y disponibilidad.\n- Reportes: generación de informes operativos y médicos.\n- Trazabilidad: seguimiento claro de la información y acciones realizadas en el sistema.\n\n🛠️ **Tecnologías utilizadas**\n\n- Backend desarrollado con arquitectura web modular\n- Integración de múltiples lenguajes para distintos componentes del sistema\n- Interfaz web interactiva y responsiva\n- Estructura preparada para crecimiento y adaptación a distintos entornos clínicos\n\n(La tecnología se selecciona según la necesidad del proyecto, priorizando estabilidad, seguridad y escalabilidad.)\n\n💡 **Valor del proyecto**\n\nMedidino demuestra la capacidad de INTEGRA Solutions para desarrollar sistemas personalizados para sectores críticos, como el ámbito de la salud, donde la organización de la información, la trazabilidad y la eficiencia son fundamentales.`,
       images: [
-        "/assets/images/MEDIDINO FOTOS/PRINCIPAL MEDIDINO.jpg",
         "/assets/images/MEDIDINO FOTOS/HOME .png",
         "/assets/images/MEDIDINO FOTOS/medicamento.png",
         "/assets/images/MEDIDINO FOTOS/medico.png",
@@ -49,9 +51,16 @@ export default function ProyectosWebPage() {
       ]
     },
     {
-      title: "Plataforma Educativa",
-      description: "Sistema de gestión de aprendizaje (LMS) con video streaming y seguimiento de progreso.",
-      tags: ["React", "Node.js", "MongoDB"],
+      title: "Vitalis: Gestión Médica",
+      description: "Plataforma web para gestión integral de pacientes, médicos, incapacidades y pagos en clínicas y consultorios.",
+      tags: ["Python", "Flask", "MySQL", "HTML", "CSS", "Jinja2"],
+      detalle: `Esta plataforma es una aplicación web orientada al sector salud, diseñada para optimizar la gestión de incapacidades médicas, usuarios y pagos dentro de clínicas o entidades prestadoras de servicios de salud.\n\nEl sistema permite a los pacientes registrar y consultar sus incapacidades, mientras que los administradores y personal autorizado pueden revisar, aprobar o rechazar solicitudes, llevar el control de pagos asociados y generar reportes mensuales en formato PDF para seguimiento y análisis administrativo.\n\nLa aplicación cuenta con un sistema de autenticación y control de acceso por roles, ofreciendo paneles diferenciados para pacientes, médicos y administradores, lo que garantiza seguridad, organización y una experiencia de uso clara según el perfil del usuario.\n\nA nivel técnico, el sistema está desarrollado con Python utilizando el framework Flask para la lógica del backend, MySQL como motor de base de datos y una interfaz web basada en HTML y CSS, apoyada en plantillas Jinja2 para una estructura dinámica y mantenible.\n\nEsta solución contribuye a la digitalización de procesos clínicos, mejora la trazabilidad de la información y reduce la gestión manual en entornos de salud.`,
+      images: [
+        "/assets/images/vitalis fotos/vitales home.png",
+        "/assets/images/vitalis fotos/admin .png",
+        "/assets/images/vitalis fotos/Captura de pantalla 2026-01-16 180555.png",
+        "/assets/images/vitalis fotos/Captura de pantalla 2026-01-16 180628.png"
+      ],
       link: "#"
     },
     {
@@ -168,7 +177,7 @@ export default function ProyectosWebPage() {
                   title={medidino.title}
                   description={medidino.description}
                   tags={medidino.tags}
-                  image={Array.isArray(medidino.images) ? medidino.images[0] : undefined}
+                  image={"/assets/images/MEDIDINO FOTOS/PRINCIPAL MEDIDINO.jpg"}
                 />
               </div>
               <button
@@ -180,16 +189,55 @@ export default function ProyectosWebPage() {
             </div>
           ))}
           {/* Otros proyectos (excepto Arabela, Conexa, Medidino) */}
-          {projects.filter(p => p !== arabela && p !== conexa && !p.title.includes('Medidino')).map((project, index) => (
-            <ProjectCard
-              key={index}
-              title={project.title}
-              description={project.description}
-              tags={project.tags}
-              link={project.link}
-              image={Array.isArray(project.images) ? project.images[0] : undefined}
-            />
-          ))}
+          {projects.filter(p => p !== arabela && p !== conexa && !p.title.includes('Medidino')).map((project, index) => {
+            // Si es el nuevo proyecto, mostrar con modal
+            if (project.title === "Vitalis: Gestión Médica") {
+              return (
+                <div className="flex flex-col h-full" key={index}>
+                  <div className="flex-1 flex flex-col">
+                    <ProjectCard
+                      title={project.title}
+                      description={project.description}
+                      tags={project.tags}
+                      image={"/assets/images/vitalis fotos/PORTADA VITALIS.jpg"}
+                    />
+                  </div>
+                  <button
+                    className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                    onClick={() => setModalIncapacidadesOpen(true)}
+                  >
+                    Ver Proyecto →
+                  </button>
+                </div>
+              );
+            }
+            // Otros proyectos normales
+            return (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                description={project.description}
+                tags={project.tags}
+                link={project.link}
+                image={Array.isArray(project.images) ? project.images[0] : undefined}
+              />
+            );
+          })}
+                        {/* Modal Galería para Sistema de Incapacidades */}
+                        {(() => {
+                          const incap = projects.find(p => p.title === "Vitalis: Gestión Médica");
+                          if (!incap) return null;
+                          return (
+                            <ModalGaleria
+                              isOpen={modalIncapacidadesOpen}
+                              onClose={() => setModalIncapacidadesOpen(false)}
+                              images={incap.images ?? []}
+                              title={incap.title}
+                              // @ts-ignore
+                              description={incap.detalle ?? ""}
+                            />
+                          );
+                        })()}
                 {/* Modal Galería para Medidino */}
                 {(() => {
                   const medidino = projects.find(p => p.title.includes('Medidino'));
