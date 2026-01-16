@@ -37,7 +37,7 @@ export default function Home() {
             {/* Título principal - KECECA SOLUTIONS */}
             <div className="mb-8">
               <h1 className="text-6xl md:text-8xl font-bold leading-tight text-white drop-shadow-2xl animate-fade-in">
-                KECECA SOLUTIONS
+                INTEGRA SOLUTIONS
               </h1>
             </div>
             
@@ -119,22 +119,30 @@ export default function Home() {
             projects={[
               {
                 id: 1,
-                title: 'E-commerce Premium',
-                subtitle: 'Tienda online con pasarela de pagos',
-                image: '/assets/projects/ecommerce.jpg',
-                category: 'Desarrollo Web',
+                title: 'Arabela: Ecosistema Digital',
+                subtitle: 'Transformación digital integral para empresa de belleza y ventas por catálogo',
+                image: '/assets/images/ARABELA FOTOS/PRINCIPAL INVENTARIO.jpg',
+                category: 'Transformación Digital',
                 size: 'large',
               },
               {
                 id: 2,
-                title: 'Sistema de Inventarios',
-                subtitle: 'Dashboard administrativo personalizado',
-                image: '/assets/projects/inventory.jpg',
-                category: 'Sistemas Personalizados',
+                title: 'E-commerce Premium',
+                subtitle: 'Tienda online con pasarela de pagos',
+                image: '/assets/projects/ecommerce.jpg',
+                category: 'Desarrollo Web',
                 size: 'medium',
               },
               {
                 id: 3,
+                title: 'Sistema de Inventarios',
+                subtitle: 'Dashboard administrativo personalizado',
+                image: '/assets/projects/inventory.jpg',
+                category: 'Sistemas Personalizados',
+                size: 'small',
+              },
+              {
+                id: 4,
                 title: 'Chatbot WhatsApp',
                 subtitle: 'Atención 24/7 con IA',
                 image: '/assets/projects/chatbot.jpg',
@@ -142,23 +150,16 @@ export default function Home() {
                 size: 'small',
               },
               {
-                id: 4,
+                id: 5,
                 title: 'Web Corporativa',
                 subtitle: 'Presencia digital profesional',
                 image: '/assets/projects/corporate.jpg',
                 category: 'Diseño Web',
-                size: 'small',
-              },
-              {
-                id: 5,
-                title: 'Automatización de Procesos',
-                subtitle: 'Flujos inteligentes de trabajo',
-                image: '/assets/projects/automation.jpg',
-                category: 'Automatización',
                 size: 'medium',
               },
             ]}
           />
+
 
           <div className="text-center mt-12">
             <FadeIn delay={0.5}>
@@ -287,7 +288,7 @@ export default function Home() {
               
               <FadeIn delay={0.3}>
                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                  En <span className="font-semibold text-blue-600">KECECA SOLUTIONS</span>, somos un equipo de desarrolladores y consultores tecnológicos especializados en ayudar a negocios locales, emprendedores y PYMES a modernizarse con tecnología accesible y efectiva.
+                  En <span className="font-semibold text-blue-600">INTEGRA SOLUTIONS</span>, somos un equipo de desarrolladores y consultores tecnológicos especializados en ayudar a negocios locales, emprendedores y PYMES a modernizarse con tecnología accesible y efectiva.
                 </p>
               </FadeIn>
 
@@ -384,12 +385,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Por qué elegir Kececa Solutions - Versión Visual */}
+      {/* Por qué elegir Integra Solutions - Versión Visual */}
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <TextReveal className="text-4xl md:text-5xl font-bold mb-4">
-              ¿Por qué Kececa Solutions?
+              ¿Por qué Integra Solutions?
             </TextReveal>
             <FadeIn delay={0.2}>
               <p className="text-xl text-gray-600 dark:text-gray-300">Tu aliado tecnológico de confianza</p>

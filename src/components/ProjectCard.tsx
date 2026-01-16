@@ -12,11 +12,13 @@ export default function ProjectCard({ title, description, image, tags, link }: P
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
       {image && (
-        <div className="relative h-48 bg-gradient-to-r from-blue-500 to-purple-500">
-          {/* Placeholder for project image */}
-          <div className="w-full h-full flex items-center justify-center text-white text-2xl font-bold">
-            {title}
-          </div>
+        <div className="relative w-full overflow-hidden bg-gray-100 dark:bg-gray-800" style={{ height: '180px' }}>
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover rounded-t-lg"
+            style={{ display: 'block' }}
+          />
         </div>
       )}
       <div className="p-6">

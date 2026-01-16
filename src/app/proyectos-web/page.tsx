@@ -1,7 +1,22 @@
+"use client";
+import { useState } from "react";
 import ProjectCard from "@/components/ProjectCard";
+import ModalGaleria from "@/components/ModalGaleria";
 
 export default function ProyectosWebPage() {
   const projects = [
+    {
+      title: "Sistema de Gestión Web – Arabela Espectáculos",
+      description: "Sistema web básico para gestión interna, inventario y vestuarios con login seguro. Simple, funcional y orientado a optimizar procesos internos.",
+      tags: ["PHP", "Login", "Inventario", "Vestuarios", "Web Admin", "Validaciones"],
+      detalle: `Desarrollo de un sistema web básico de gestión interna para Arabela Espectáculos, enfocado en el control organizado de recursos y acceso de usuarios.\n\n**Funcionalidades principales:**\n- Sistema de autenticación de usuarios (login y control de acceso)\n- Gestión de inventario: agregar, editar, eliminar y listar elementos\n- Gestión de vestuarios con control de estado\n- Interfaz web sencilla y práctica para uso administrativo\n- Estructura organizada de archivos para facilitar mantenimiento\n\n**Tecnologías utilizadas:**\n- Desarrollo web con tecnologías del lado del servidor\n- Estructura modular de archivos\n- Formularios y validaciones básicas\n- Gestión de datos persistentes\n\n(No se muestra el código por confidencialidad del proyecto.)\n\n🌐 [Acceso al sistema (login)](https://arabela.page.gd/login.php)\n\n*Nota: Proyecto de carácter interno/administrativo.*`,
+      images: [
+        "/assets/images/ARABELA FOTOS/ARABELA TEMATICA FOTO.png",
+        "/assets/images/ARABELA FOTOS/PAGINA WEB SENCILLA.png",
+        "/assets/images/ARABELA FOTOS/Captura de pantalla 2026-01-15 230616.png"
+      ],
+      link: "https://arabela.page.gd/login.php"
+    },
     {
       title: "E-commerce Fashion",
       description: "Tienda online completa para marca de moda con sistema de inventario y pagos integrados.",
@@ -47,6 +62,9 @@ export default function ProyectosWebPage() {
     { number: "5⭐", label: "Calificación Promedio" }
   ];
 
+  // Estado para modal de galería
+  const [modalOpen, setModalOpen] = useState(false);
+  const arabela = projects[0];
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="text-center mb-16">
@@ -75,17 +93,42 @@ export default function ProyectosWebPage() {
       <section className="mb-16">
         <h2 className="text-3xl font-bold mb-8">Proyectos Destacados</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {/* Arabela con modal */}
+          <div>
+            <ProjectCard
+              title={arabela.title}
+              description={arabela.description}
+              tags={arabela.tags}
+              image={"/assets/images/ARABELA FOTOS/PRINCIPAL INVENTARIO.jpg"}
+            />
+            <button
+              className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              onClick={() => setModalOpen(true)}
+            >
+              Ver Proyecto →
+            </button>
+          </div>
+          {/* Otros proyectos */}
+          {projects.slice(1).map((project, index) => (
             <ProjectCard
               key={index}
               title={project.title}
               description={project.description}
               tags={project.tags}
               link={project.link}
-              image="placeholder"
+              image={Array.isArray(project.images) ? project.images[0] : undefined}
             />
           ))}
         </div>
+        {/* Modal Galería para Arabela */}
+        <ModalGaleria
+          isOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          images={Array.isArray(arabela.images) ? arabela.images : []}
+          title={arabela.title}
+          // @ts-ignore
+          description={arabela.detalle}
+        />
       </section>
 
       {/* Process */}
@@ -139,3 +182,5 @@ export default function ProyectosWebPage() {
     </div>
   );
 }
+
+
