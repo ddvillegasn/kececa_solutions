@@ -118,9 +118,9 @@ export default function ProyectosWebPage() {
   const arabela = projects.find(p => p.title.includes('Arabela'));
   const conexa = projects.find(p => p.title.includes('Conexa'));
   return (
-    <div className="container mx-auto px-4 pt-32 pb-16">
+    <div className="container mx-auto px-4 pt-40 pb-16">
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">Proyectos Web</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">Proyectos Web</h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
           Aquí te mostramos una selección real de los proyectos web desarrollados para nuestros clientes. Cada solución fue creada a la medida, priorizando calidad, seguridad y resultados tangibles para cada organización.
         </p>

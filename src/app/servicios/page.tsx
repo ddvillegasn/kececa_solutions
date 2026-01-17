@@ -87,10 +87,10 @@ export default function ServiciosPage() {
   ];
 
   return (
-    <div className="container mx-auto px-4 pt-32 pb-16">
+    <div className="container mx-auto px-4 pt-40 pb-16">
 
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">Nuestros Servicios</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">Nuestros Servicios</h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
           No solo creamos páginas web atractivas: desarrollamos sistemas completos, automatizaciones inteligentes y chatbots con IA que optimizan tu operación y mejoran la experiencia de tus clientes. <br />
           Ofrecemos soluciones digitales integrales para que tu negocio crezca, sea más eficiente y destaque en el entorno digital actual.
