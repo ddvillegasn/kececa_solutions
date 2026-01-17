@@ -1,9 +1,16 @@
+
 "use client";
+// Estado para modal del bot de Telegram
 import { useState } from "react";
 import ProjectCard from "@/components/ProjectCard";
 import ModalGaleria from "@/components/ModalGaleria";
 
+
+
+
 export default function ProyectosWebPage() {
+  // Estado para modal del bot de Telegram
+  const [modalBotOpen, setModalBotOpen] = useState(false);
 
   // Estado para modal de incapacidades
   const [modalIncapacidadesOpen, setModalIncapacidadesOpen] = useState(false);
@@ -64,9 +71,16 @@ export default function ProyectosWebPage() {
       link: "#"
     },
     {
-      title: "Dashboard Analytics",
-      description: "Panel de control interactivo para análisis de datos empresariales en tiempo real.",
-      tags: ["React", "D3.js", "Python"],
+      title: "Bot de Atención al Cliente en Telegram",
+      description: "Automatiza la atención inicial de tus clientes en Telegram de forma clara, rápida y profesional.",
+      tags: ["Node.js", "JavaScript", "Telegram API"],
+      detalle: `Este proyecto consiste en un bot de atención al cliente desarrollado para empresas de servicios digitales, diseñado para automatizar la primera interacción con los usuarios de forma clara, rápida y profesional.\n\nEl bot presenta un menú interactivo que permite a los usuarios:\n- Consultar información sobre servicios ofrecidos.\n- Solicitar cotizaciones de manera guiada.\n- Acceder a opciones de soporte.\n- Conocer información general de la empresa.\n- Contactar con un asesor humano cuando es necesario.\n\nEl sistema reconoce tanto opciones numéricas como palabras clave, lo que facilita la interacción y mejora la experiencia del usuario sin requerir entrenamiento previo. Su lógica está basada en flujos conversacionales definidos, garantizando respuestas consistentes y controladas.\n\nEste bot está pensado como una solución ligera, estable y de fácil mantenimiento, ideal para empresas que buscan automatizar la atención inicial sin depender de inteligencia artificial ni bases de datos, reduciendo costos y complejidad técnica.\n\n**Tecnologías utilizadas**\n- Node.js (JavaScript) como entorno de ejecución.\n- node-telegram-bot-api para la integración y comunicación con la plataforma Telegram.\n- Arquitectura basada en flujos conversacionales y comandos estructurados.\n\n**Valor para el negocio**\n- Atención al cliente 24/7.\n- Reducción de carga operativa en canales de soporte.\n- Respuestas rápidas y estandarizadas.\n- Implementación sencilla y escalable.\n- Bajo costo de mantenimiento.`,
+      images: [
+        "/assets/images/BOT INTEGRA/PORTADA BOT.jpg",
+        "/assets/images/BOT INTEGRA/0cad3b3e-d14a-4c6e-9140-dc2bcdcaae86.jpg",
+        "/assets/images/BOT INTEGRA/1edbdf5c-a782-429d-8930-b0d01fac10b0.jpg",
+        "/assets/images/BOT INTEGRA/8cb61ff9-d32f-4be0-955d-8f814ac0efdd.jpg"
+      ],
       link: "#"
     },
     {
@@ -92,10 +106,10 @@ export default function ProyectosWebPage() {
   const [modalMedidinoOpen, setModalMedidinoOpen] = useState(false);
 
   const stats = [
-    { number: "50+", label: "Proyectos Completados" },
-    { number: "30+", label: "Clientes Satisfechos" },
-    { number: "100%", label: "Tasa de Éxito" },
-    { number: "5⭐", label: "Calificación Promedio" }
+    { number: "10+", label: "Proyectos Web Entregados" },
+    { number: "8+", label: "Clientes Empresariales" },
+    { number: "100%", label: "Satisfacción de Entrega" },
+    { number: "5⭐", label: "Valoración de Clientes" }
   ];
 
   // Estado para modal de galería
@@ -108,8 +122,7 @@ export default function ProyectosWebPage() {
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">Proyectos Web</h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Descubre algunos de los proyectos web que hemos desarrollado para nuestros clientes. 
-          Cada proyecto es único y diseñado para alcanzar objetivos específicos.
+          Aquí te mostramos una selección real de los proyectos web desarrollados para nuestros clientes. Cada solución fue creada a la medida, priorizando calidad, seguridad y resultados tangibles para cada organización.
         </p>
       </div>
 
@@ -190,7 +203,7 @@ export default function ProyectosWebPage() {
           ))}
           {/* Otros proyectos (excepto Arabela, Conexa, Medidino) */}
           {projects.filter(p => p !== arabela && p !== conexa && !p.title.includes('Medidino')).map((project, index) => {
-            // Si es el nuevo proyecto, mostrar con modal
+            // Modal para Vitalis
             if (project.title === "Vitalis: Gestión Médica") {
               return (
                 <div className="flex flex-col h-full" key={index}>
@@ -211,6 +224,27 @@ export default function ProyectosWebPage() {
                 </div>
               );
             }
+            // Modal para Bot de Atención al Cliente en Telegram
+            if (project.title === "Bot de Atención al Cliente en Telegram") {
+              return (
+                <div className="flex flex-col h-full" key={index}>
+                  <div className="flex-1 flex flex-col">
+                    <ProjectCard
+                      title={project.title}
+                      description={project.description}
+                      tags={project.tags}
+                      image={Array.isArray(project.images) ? project.images[0] : undefined}
+                    />
+                  </div>
+                  <button
+                    className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                    onClick={() => setModalBotOpen(true)}
+                  >
+                    Ver Proyecto →
+                  </button>
+                </div>
+              );
+            }
             // Otros proyectos normales
             return (
               <ProjectCard
@@ -223,6 +257,21 @@ export default function ProyectosWebPage() {
               />
             );
           })}
+                                {/* Modal Galería para Bot de Atención al Cliente en Telegram */}
+                                {(() => {
+                                  const bot = projects.find(p => p.title === "Bot de Atención al Cliente en Telegram");
+                                  if (!bot) return null;
+                                  return (
+                                    <ModalGaleria
+                                      isOpen={modalBotOpen}
+                                      onClose={() => setModalBotOpen(false)}
+                                      images={bot.images ?? []}
+                                      title={bot.title}
+                                      // @ts-ignore
+                                      description={bot.detalle ?? ""}
+                                    />
+                                  );
+                                })()}
                         {/* Modal Galería para Sistema de Incapacidades */}
                         {(() => {
                           const incap = projects.find(p => p.title === "Vitalis: Gestión Médica");
@@ -278,37 +327,37 @@ export default function ProyectosWebPage() {
         )}
       </section>
 
-      {/* Process */}
-      <section className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-12">
-        <h2 className="text-3xl font-bold mb-8 text-center">Nuestro Proceso</h2>
+      {/* Proceso profesional minimalista */}
+      <section className="bg-white dark:bg-gray-900 rounded-2xl p-12 border border-gray-200 dark:border-gray-800 shadow-lg">
+        <h2 className="text-3xl font-bold mb-8 text-center text-blue-700 dark:text-blue-300">Nuestro Proceso de Desarrollo</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="text-center">
-            <div className="text-4xl mb-4">🎯</div>
-            <h3 className="font-semibold mb-2">1. Análisis</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Entendemos tus necesidades y objetivos
-            </p>
+          <div className="flex flex-col items-center text-center bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-100 dark:border-gray-800 shadow-sm">
+            <div className="mb-4">
+              <svg width="40" height="40" fill="none" viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" stroke="#2563eb" strokeWidth="2" fill="#f3f4f6"/><path d="M20 12v8l6 3" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </div>
+            <h3 className="font-semibold mb-2 text-base text-blue-700 dark:text-blue-300">Análisis Estratégico</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-sm">Diagnóstico de objetivos y necesidades para definir la mejor solución digital.</p>
           </div>
-          <div className="text-center">
-            <div className="text-4xl mb-4">✏️</div>
-            <h3 className="font-semibold mb-2">2. Diseño</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Creamos prototipos y diseños personalizados
-            </p>
+          <div className="flex flex-col items-center text-center bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-100 dark:border-gray-800 shadow-sm">
+            <div className="mb-4">
+              <svg width="40" height="40" fill="none" viewBox="0 0 40 40"><rect x="7" y="7" width="26" height="26" rx="5" fill="#f3f4f6" stroke="#2563eb" strokeWidth="2"/><path d="M13 27V13h14v14H13z" stroke="#2563eb" strokeWidth="1.5" strokeLinejoin="round"/></svg>
+            </div>
+            <h3 className="font-semibold mb-2 text-base text-blue-700 dark:text-blue-300">Diseño Personalizado</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-sm">Prototipos y experiencias visuales alineadas con la identidad de tu empresa.</p>
           </div>
-          <div className="text-center">
-            <div className="text-4xl mb-4">⚙️</div>
-            <h3 className="font-semibold mb-2">3. Desarrollo</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Construimos tu proyecto con las mejores tecnologías
-            </p>
+          <div className="flex flex-col items-center text-center bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-100 dark:border-gray-800 shadow-sm">
+            <div className="mb-4">
+              <svg width="40" height="40" fill="none" viewBox="0 0 40 40"><rect x="9" y="9" width="22" height="22" rx="5" fill="#f3f4f6" stroke="#2563eb" strokeWidth="2"/><path d="M20 15v10M15 20h10" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round"/></svg>
+            </div>
+            <h3 className="font-semibold mb-2 text-base text-blue-700 dark:text-blue-300">Desarrollo Profesional</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-sm">Implementación con tecnologías robustas, asegurando calidad y seguridad.</p>
           </div>
-          <div className="text-center">
-            <div className="text-4xl mb-4">🚀</div>
-            <h3 className="font-semibold mb-2">4. Lanzamiento</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Desplegamos y damos soporte continuo
-            </p>
+          <div className="flex flex-col items-center text-center bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-100 dark:border-gray-800 shadow-sm">
+            <div className="mb-4">
+              <svg width="40" height="40" fill="none" viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" stroke="#2563eb" strokeWidth="2" fill="#f3f4f6"/><path d="M20 28l6-6-6-6" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </div>
+            <h3 className="font-semibold mb-2 text-base text-blue-700 dark:text-blue-300">Implementación y Soporte</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-sm">Despliegue y acompañamiento técnico para garantizar el éxito y la continuidad operativa.</p>
           </div>
         </div>
       </section>

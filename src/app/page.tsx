@@ -131,9 +131,9 @@ export default function Home() {
               },
               {
                 id: 5,
-                title: 'Chatbot WhatsApp',
-                subtitle: 'Atención 24/7 con IA',
-                image: '/assets/projects/chatbot.jpg',
+                title: 'Bot de Atención al Cliente en Telegram',
+                subtitle: 'Automatiza la atención inicial de tus clientes en Telegram de forma clara, rápida y profesional.',
+                image: '/assets/images/BOT INTEGRA/PORTADA BOT.jpg',
                 category: 'Automatización',
                 size: 'small',
               },
