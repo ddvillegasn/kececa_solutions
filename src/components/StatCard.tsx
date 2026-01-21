@@ -10,7 +10,7 @@ interface StatCardProps {
   number: number;
   suffix?: string;
   label: string;
-  icon: string;
+  icon: React.ReactNode;
   delay?: number;
 }
 
