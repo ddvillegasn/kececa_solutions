@@ -1,84 +1,51 @@
 export default function ClientesPage() {
-  const clients = [
-    { name: "TechCorp", industry: "Tecnología", logo: "🏢" },
-    { name: "StyleBrand", industry: "Moda", logo: "👔" },
-    { name: "FoodExpress", industry: "Restaurantes", logo: "🍔" },
-    { name: "HealthPlus", industry: "Salud", logo: "🏥" },
-    { name: "EduLearn", industry: "Educación", logo: "📚" },
-    { name: "FinanceHub", industry: "Finanzas", logo: "💰" },
-  ];
 
-  const testimonials = [
-    {
-      name: "María González",
-      company: "TechCorp",
-      text: "INTEGRA SOLUTIONS transformó completamente nuestra presencia digital. El equipo es profesional y altamente capacitado.",
-      rating: 5
-    },
-    {
-      name: "Carlos Ruiz",
-      company: "StyleBrand",
-      text: "Excelente trabajo en el desarrollo de nuestra tienda online. Las ventas han aumentado significativamente.",
-      rating: 5
-    },
-    {
-      name: "Ana Martínez",
-      company: "EduLearn",
-      text: "La plataforma educativa que desarrollaron superó nuestras expectativas. Altamente recomendados.",
-      rating: 5
-    }
-  ];
+  // Aquí puedes mostrar un widget de Google Reviews o un enlace para calificar
+  // Ejemplo de enlace a Google (reemplaza por tu enlace real de Google Business)
+  const googleReviewUrl = "https://g.page/r/CODIGO_GOOGLE_REVIEW";
 
   return (
     <div className="container mx-auto px-4 pt-40 pb-16">
+
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">Nuestros Clientes</h1>
-        <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Confiamos en construir relaciones duraderas con nuestros clientes, 
-          ayudándoles a alcanzar sus metas digitales.
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">NUESTROS CLIENTES Y ALIADOS</h1>
+        <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-4">
+          La mayoría de nuestros proyectos han sido desarrollados en el marco académico, colaborando con docentes, jurados y organizaciones universitarias. Nuestro compromiso es siempre la satisfacción y el impacto real, tanto en el entorno educativo como profesional.
         </p>
       </div>
 
-      {/* Client Logos */}
+
+
+      {/* Aliados académicos y organizaciones */}
       <section className="mb-20">
-        <h2 className="text-3xl font-bold text-center mb-12">Empresas que Confían en Nosotros</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-          {clients.map((client, index) => (
-            <div
-              key={index}
-              className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col items-center justify-center"
-            >
-              <div className="text-5xl mb-3">{client.logo}</div>
-              <h3 className="font-semibold text-center">{client.name}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400 text-center">{client.industry}</p>
+        <div className="container mx-auto px-4">
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-center mb-8">ALIADOS Y ORGANIZACIONES</h2>
+            <p className="text-center text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-8">
+              Hemos trabajado junto a docentes, jurados y entidades universitarias, aportando soluciones tecnológicas y proyectos de alto impacto académico y social.
+            </p>
+            <div className="flex flex-wrap justify-center gap-8">
+              {/* Aquí puedes agregar logos de la universidad, facultad o nombres de docentes aliados */}
+              <div className="flex flex-col items-center">
+                <img src="/assets/images/universidad_logo.png" alt="Universidad" className="w-24 h-24 object-contain mb-2" />
+                <span className="text-gray-700 dark:text-gray-200 font-semibold">Universidad Aliada</span>
+              </div>
+              {/* Puedes duplicar el bloque anterior para más aliados */}
             </div>
-          ))}
+          </div>
         </div>
       </section>
 
-      {/* Testimonials */}
+
+
+
+      {/* Widget o invitación a calificar */}
       <section>
-        <h2 className="text-3xl font-bold text-center mb-12">Lo Que Dicen Nuestros Clientes</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg"
-            >
-              <div className="flex mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <span key={i} className="text-yellow-400 text-xl">★</span>
-                ))}
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 mb-6 italic">
-                "{testimonial.text}"
-              </p>
-              <div className="border-t pt-4">
-                <p className="font-semibold">{testimonial.name}</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">{testimonial.company}</p>
-              </div>
-            </div>
-          ))}
+        <h2 className="text-3xl font-bold text-center mb-12">VALORACIONES Y COMENTARIOS</h2>
+        <div className="flex flex-col items-center justify-center gap-6">
+          <div className="text-gray-500 dark:text-gray-400 text-center max-w-xl">
+            ¿Fuiste parte de un proyecto, profesor o usuario? <a href={googleReviewUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">Califica nuestro trabajo en Google</a> y ayuda a otros a conocer nuestra calidad y compromiso.
+          </div>
         </div>
       </section>
 

@@ -38,7 +38,7 @@ export default function Home() {
               INTEGRA SOLUTIONS
             </h1>
             <p className="text-2xl md:text-4xl text-white font-light drop-shadow-lg">
-              Impulsa tu Negocio Digital
+              Soluciones digitales que convierten en resultados reales
             </p>
           </div>
         </div>
@@ -56,11 +56,11 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <TextReveal className="text-4xl md:text-6xl font-bold mb-12 text-center leading-tight">
-              Nos encargamos del diseño UX premium y desarrollo web para que te enfoques en lo que más importa
+              Diseñamos y desarrollamos soluciones digitales que convierten visitas en clientes reales
             </TextReveal>
             <FadeIn delay={0.3}>
               <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 text-center leading-relaxed">
-                Creamos experiencias digitales que transforman negocios locales con tecnología moderna, automatización inteligente y diseño que convierte visitantes en clientes.
+              Ayudamos a negocios locales y PYMES a automatizar procesos, mejorar su presencia digital y aumentar sus ventas mediante tecnología moderna, diseño estratégico y sistemas inteligentes.
               </p>
             </FadeIn>
           </div>
@@ -72,11 +72,11 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <TextReveal className="text-4xl md:text-6xl font-bold mb-12 text-center leading-tight text-blue-900 dark:text-white">
-              Tu crecimiento digital, nuestra prioridad
+              Tu crecimiento digital es nuestra prioridad
             </TextReveal>
             <FadeIn delay={0.2}>
               <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-200 text-center leading-relaxed">
-                Impulsamos negocios con tecnología, creatividad y acompañamiento real. Descubre cómo una estrategia digital bien ejecutada puede abrir nuevas oportunidades y llevar tu empresa al siguiente nivel.
+                Impulsamos negocios con tecnología, automatización y acompañamiento estratégico para generar resultados reales. Una estrategia digital bien ejecutada no solo se ve bien: vende, optimiza y escala tu empresa.
               </p>
             </FadeIn>
           </div>
@@ -88,10 +88,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <TextReveal className="text-4xl md:text-5xl font-bold mb-4">
-              Proyectos que impulsan resultados
+              Proyectos que generan resultados reales
             </TextReveal>
             <FadeIn delay={0.2}>
-              <p className="text-xl text-gray-600 dark:text-gray-300">Soluciones reales para negocios reales</p>
+              <p className="text-xl text-gray-600 dark:text-gray-300">Soluciones digitales aplicadas a negocios reales</p>
             </FadeIn>
           </div>
 
@@ -180,47 +180,47 @@ export default function Home() {
             <VisualServiceCard
               icon={<span className="text-2xl">🌐</span>}
               title="Desarrollo Web"
-              description="Páginas web profesionales, e-commerce, catálogos digitales con diseño moderno y optimizado para conversión"
+              description="Páginas web profesionales, tiendas online y catálogos digitales diseñados para atraer clientes y convertir visitas en ventas."
               image="/assets/images/desarrollo web.jpg"
               delay={0.1}
             />
-            
+
             <VisualServiceCard
               icon={<span className="text-2xl">💬</span>}
               title="Chatbots WhatsApp"
-              description="Automatización 24/7 con inteligencia artificial integrada a tu sistema de ventas y atención al cliente"
+              description="Atención automatizada 24/7 con inteligencia artificial integrada a tu sistema de ventas, reservas y atención al cliente."
               image="/assets/images/chatbot.jpg"
               delay={0.2}
             />
-            
+
             <VisualServiceCard
               icon={<span className="text-2xl">💻</span>}
               title="Sistemas Personalizados"
-              description="Desarrollo en cualquier lenguaje: inventarios, cotizadores, CRMs, dashboards y más"
+              description="Desarrollamos sistemas a medida: inventarios, cotizadores, CRM, dashboards y software interno adaptado a tu negocio."
               image="/assets/images/fronted.jpg"
               delay={0.3}
             />
-            
+
             <VisualServiceCard
               icon={<span className="text-2xl">🤖</span>}
               title="Automatizaciones"
-              description="Flujos inteligentes de reservas, formularios, cotizaciones y procesos operativos"
+              description="Automatizamos reservas, formularios, cotizaciones y procesos internos para ahorrar tiempo y reducir errores."
               image="/assets/images/memoria ram roja.jpg"
               delay={0.4}
             />
-            
+
             <VisualServiceCard
               icon={<span className="text-2xl">📱</span>}
               title="Presencia Digital"
-              description="SEO local, Google Business, gestión de redes sociales y reputación online"
+              description="Mejoramos tu visibilidad online con SEO local, Google Business, redes sociales y reputación digital."
               image="/assets/images/imagen geometrica.jpg"
               delay={0.5}
             />
-            
+
             <VisualServiceCard
               icon={<span className="text-2xl">🔧</span>}
               title="Soporte & Seguridad"
-              description="Mantenimiento continuo, actualizaciones, backups y monitoreo 24/7 de tus sistemas"
+              description="Mantenimiento continuo, actualizaciones, copias de seguridad y monitoreo para que tus sistemas siempre funcionen."
               image="/assets/images/oficina trabajo.jpg"
               delay={0.6}
             />
@@ -330,30 +330,29 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <StatCard
               icon="🚀"
-              number={50}
+              number={10}
               suffix="+"
-              label="Proyectos Completados"
+              label="Proyectos Web Entregados"
               delay={0.1}
+            />
+            <StatCard
+              icon="💼"
+              number={8}
+              suffix="+"
+              label="Clientes Empresariales"
+              delay={0.2}
             />
             <StatCard
               icon="⭐"
               number={100}
               suffix="%"
-              label="Clientes Satisfechos"
-              delay={0.2}
-            />
-            <StatCard
-              icon="⚡"
-              number={24}
-              suffix="/7"
-              label="Soporte Disponible"
+              label="Satisfacción de Entrega"
               delay={0.3}
             />
             <StatCard
-              icon="💼"
-              number={15}
-              suffix="+"
-              label="Industrias Atendidas"
+              icon="⭐"
+              number={5.0}
+              label="Valoración de Clientes"
               delay={0.4}
             />
           </div>
