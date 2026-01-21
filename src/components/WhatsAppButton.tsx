@@ -12,7 +12,7 @@ export default function WhatsAppButton() {
   }, []);
 
   const handleClick = () => {
-    window.open("https://wa.me/51999999999?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios", "_blank");
+    window.open("https://wa.me/573204153533?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios", "_blank");
   };
 
   return (

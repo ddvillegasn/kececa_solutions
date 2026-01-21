@@ -83,24 +83,6 @@ export default function ProyectosWebPage() {
       ],
       link: "#"
     },
-    {
-      title: "Reservas de Restaurante",
-      description: "Aplicación web para gestión de reservas, menús digitales y pedidos online.",
-      tags: ["Next.js", "PostgreSQL", "Vercel"],
-      link: "#"
-    },
-    {
-      title: "Marketplace B2B",
-      description: "Plataforma de comercio electrónico B2B con gestión de múltiples vendedores.",
-      tags: ["TypeScript", "GraphQL", "AWS"],
-      link: "#"
-    },
-    {
-      title: "App de Salud y Bienestar",
-      description: "Aplicación para seguimiento de salud, ejercicios y nutrición personalizada.",
-      tags: ["React Native", "Firebase", "ML"],
-      link: "#"
-    }
   ];
 
   const [modalMedidinoOpen, setModalMedidinoOpen] = useState(false);

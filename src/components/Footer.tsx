@@ -13,7 +13,7 @@ export default function Footer() {
               INTEGRA SOLUTIONS
             </h3>
             <p className="text-gray-400 mb-4">
-              Transformando ideas en soluciones digitales innovadoras.
+              Agencia de servicios digitales y automatización tecnológica para negocios, emprendedores y pequeñas empresas.
             </p>
           </div>
 
@@ -21,6 +21,11 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Enlaces Rápidos</h4>
             <ul className="space-y-2">
+              <li>
+                <Link href="/" className="text-gray-400 hover:text-white transition-colors">
+                  Inicio
+                </Link>
+              </li>
               <li>
                 <Link href="/empresa" className="text-gray-400 hover:text-white transition-colors">
                   Empresa
@@ -32,8 +37,23 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/clientes" className="text-gray-400 hover:text-white transition-colors">
+                  Clientes
+                </Link>
+              </li>
+              <li>
                 <Link href="/proyectos-web" className="text-gray-400 hover:text-white transition-colors">
                   Proyectos Web
+                </Link>
+              </li>
+              <li>
+                <Link href="/noticias" className="text-gray-400 hover:text-white transition-colors">
+                  Noticias
+                </Link>
+              </li>
+              <li>
+                <Link href="/contactenos" className="text-gray-400 hover:text-white transition-colors">
+                  Contáctenos
                 </Link>
               </li>
             </ul>
@@ -43,10 +63,26 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Servicios</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Desarrollo Web</li>
-              <li>Diseño Digital</li>
-              <li>Marketing Digital</li>
-              <li>Consultoría IT</li>
+              <li>
+                <Link href="/servicios#desarrollo-web" className="hover:text-white transition-colors">
+                  Desarrollo Web
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicios#diseno-digital" className="hover:text-white transition-colors">
+                  Diseño Digital
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicios#marketing-digital" className="hover:text-white transition-colors">
+                  Marketing Digital
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicios#consultoria-it" className="hover:text-white transition-colors">
+                  Consultoría IT
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -54,9 +90,9 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contacto</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>📧 info@integrasolutions.com</li>
-              <li>📱 +51 999 999 999</li>
-              <li>📍 Lima, Perú</li>
+              <li>📧 integrasasolutions@gmail.com</li>
+              <li>📱 3204153533</li>
+              <li>📍 Pereira, Risaralda, Colombia</li>
             </ul>
           </div>
         </div>
