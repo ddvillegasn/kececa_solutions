@@ -14,17 +14,15 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-        {/* Video Background - Más visible */}
+        {/* Video Background desde Cloudinary */}
         <div className="absolute inset-0 w-full h-full overflow-hidden">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover opacity-70"
-          >
-            <source src="/assets/videos/red neuronal roja.mp4" type="video/mp4" />
-          </video>
+          <iframe
+            src="https://player.cloudinary.com/embed/?cloud_name=dolwsuiqy&public_id=red_neuronal_azul_ecw9ga&fluid=true&controls=false&autoplay=true&loop=true&muted=true"
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ opacity: 0.7, pointerEvents: 'none' }}
+            allow="autoplay; fullscreen; encrypted-media"
+            frameBorder="0"
+          />
           {/* Overlay más sutil para que se vea el video */}
           <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-transparent to-black/60" />
         </div>
@@ -77,12 +75,12 @@ export default function Home() {
       </section>
 
       {/* About Section - Más visual, menos texto */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+      <section className="py-20 bg-gray-50 dark:bg-gray-800" aria-label="¿Qué hacemos?">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <TextReveal className="text-4xl md:text-6xl font-bold mb-12 text-center leading-tight">
+            <h2 className="text-4xl md:text-6xl font-bold mb-12 text-center leading-tight">
               Diseñamos y desarrollamos soluciones digitales que convierten visitas en clientes reales
-            </TextReveal>
+            </h2>
             <FadeIn delay={0.3}>
               <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 text-center leading-relaxed">
               Ayudamos a negocios locales y PYMES a automatizar procesos, mejorar su presencia digital y aumentar sus ventas mediante tecnología moderna, diseño estratégico y sistemas inteligentes.
@@ -93,12 +91,12 @@ export default function Home() {
       </section>
 
       {/* Nueva sección profesional y atractiva */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-100 dark:from-gray-900 dark:to-blue-900">
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-100 dark:from-gray-900 dark:to-blue-900" aria-label="Nuestra prioridad">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <TextReveal className="text-4xl md:text-6xl font-bold mb-12 text-center leading-tight text-blue-900 dark:text-white">
+            <h2 className="text-4xl md:text-6xl font-bold mb-12 text-center leading-tight text-blue-900 dark:text-white">
               Tu crecimiento digital es nuestra prioridad
-            </TextReveal>
+            </h2>
             <FadeIn delay={0.2}>
               <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-200 text-center leading-relaxed">
                 Impulsamos negocios con tecnología, automatización y acompañamiento estratégico para generar resultados reales. Una estrategia digital bien ejecutada no solo se ve bien: vende, optimiza y escala tu empresa.
@@ -109,12 +107,12 @@ export default function Home() {
       </section>
 
       {/* Proyectos Destacados - Visual Grid como Immersive Studios */}
-      <section className="py-20 bg-white dark:bg-gray-900">
+      <section className="py-20 bg-white dark:bg-gray-900" aria-label="Proyectos destacados">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <TextReveal className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Proyectos que generan resultados reales
-            </TextReveal>
+            </h2>
             <FadeIn delay={0.2}>
               <p className="text-xl text-gray-600 dark:text-gray-300">Soluciones digitales aplicadas a negocios reales</p>
             </FadeIn>
@@ -181,12 +179,12 @@ export default function Home() {
       </section>
 
       {/* Servicios Principales - Estilo Visual con Imágenes */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-20 bg-gray-900" aria-label="Servicios digitales">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <TextReveal className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
               Servicios digitales que impulsan tu negocio
-            </TextReveal>
+            </h2>
             <FadeIn delay={0.2}>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                 Soluciones tecnológicas integrales: desarrollo web, automatización, chatbots y sistemas personalizados para el crecimiento real de tu empresa.
@@ -264,17 +262,18 @@ export default function Home() {
             {/* Video & Imágenes */}
             <FadeIn direction="left">
               <div className="relative">
-                {/* Video Principal */}
+                {/* Video Principal desde Cloudinary */}
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
+                  <iframe
+                    src="https://player.cloudinary.com/embed/?cloud_name=dolwsuiqy&public_id=trabajando_en_oficina_r5kdid&fluid=true&controls=false&autoplay=true&loop=true&muted=true"
+                    width="100%"
+                    height="100%"
+                    style={{ aspectRatio: '16/9' }}
+                    allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                    allowFullScreen
+                    frameBorder="0"
                     className="w-full h-auto"
-                  >
-                    <source src="/assets/videos/trabajando en oficina.mp4" type="video/mp4" />
-                  </video>
+                  />
                 </div>
                 
                 {/* Imagen Flotante */}

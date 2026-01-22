@@ -1,10 +1,32 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sobre Nosotros - Agencia Digital en Colombia",
+  description: "Conoce INTEGRA SOLUTIONS, agencia de servicios digitales especializada en desarrollo web, automatización y sistemas personalizados. Impulsamos PYMES y negocios locales con tecnología moderna.",
+  keywords: [
+    "agencia digital Colombia",
+    "empresa desarrollo web",
+    "agencia tecnológica",
+    "soluciones digitales PYMES",
+    "Eje Cafetero tecnología"
+  ],
+  openGraph: {
+    title: "Sobre INTEGRA SOLUTIONS - Agencia Digital",
+    description: "Agencia de servicios digitales enfocada en transformar negocios con tecnología accesible y efectiva.",
+    url: "https://www.integra-solutions.com/empresa",
+  },
+  alternates: {
+    canonical: "https://www.integra-solutions.com/empresa",
+  },
+};
+
 export default function EmpresaPage() {
   return (
     <div className="container mx-auto px-4 pt-40 pb-16">
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">INTEGRA SOLUTIONS</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">INTEGRA SOLUTIONS - Agencia Digital en Colombia</h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Agencia de servicios digitales y automatización tecnológica para negocios, emprendedores y pequeñas empresas.
+          Agencia de servicios digitales y automatización tecnológica para negocios, emprendedores y pequeñas empresas en el Eje Cafetero y toda Colombia.
         </p>
       </div>
       <div className="max-w-4xl mx-auto">

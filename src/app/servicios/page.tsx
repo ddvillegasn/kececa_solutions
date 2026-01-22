@@ -1,4 +1,28 @@
 import ServiceCard from "@/components/ServiceCard";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Servicios de Desarrollo Web y Automatización Digital",
+  description: "Desarrollo web profesional, chatbots con IA para WhatsApp, automatización de procesos, sistemas personalizados y optimización SEO. Servicios digitales completos para empresas en Colombia.",
+  keywords: [
+    "desarrollo web profesional",
+    "chatbots WhatsApp Colombia",
+    "automatización empresarial",
+    "sistemas a medida",
+    "SEO local",
+    "e-commerce Colombia",
+    "inteligencia artificial empresas",
+    "mantenimiento web"
+  ],
+  openGraph: {
+    title: "Servicios Digitales - INTEGRA SOLUTIONS",
+    description: "Desarrollo web, chatbots IA, automatización y sistemas personalizados para impulsar tu negocio.",
+    url: "https://www.integra-solutions.com/servicios",
+  },
+  alternates: {
+    canonical: "https://www.integra-solutions.com/servicios",
+  },
+};
 
 export default function ServiciosPage() {
   const services = [
@@ -90,7 +114,7 @@ export default function ServiciosPage() {
     <div className="container mx-auto px-4 pt-40 pb-16">
 
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">Nuestros Servicios</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">Servicios de Desarrollo Web, Chatbots IA y Automatización | Colombia</h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
           No solo creamos páginas web atractivas: desarrollamos sistemas completos, automatizaciones inteligentes y chatbots con IA que optimizan tu operación y mejoran la experiencia de tus clientes. <br />
           Ofrecemos soluciones digitales integrales para que tu negocio crezca, sea más eficiente y destaque en el entorno digital actual.

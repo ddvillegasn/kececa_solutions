@@ -14,7 +14,7 @@ const FEEDS = [
 
 export async function getNews(limit = 12) {
   const parser = new Parser();
-  let articles = [];
+  let articles: any[] = [];
   for (const url of FEEDS) {
     try {
       const feed = await parser.parseURL(url);
@@ -53,6 +53,6 @@ export async function getNews(limit = 12) {
     }
   }
   // Ordenar por fecha descendente y limitar
-  articles.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+  articles.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
   return articles.slice(0, limit);
 }

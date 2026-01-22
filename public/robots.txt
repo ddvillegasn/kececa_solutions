@@ -1,0 +1,16 @@
+# Robots.txt - INTEGRA SOLUTIONS
+# Permitir el rastreo completo del sitio
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.integra-solutions.com/sitemap.xml
+
+# Bloquear archivos innecesarios
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Crawl-delay para no sobrecargar el servidor
+Crawl-delay: 1

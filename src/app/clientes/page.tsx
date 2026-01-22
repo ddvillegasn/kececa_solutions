@@ -186,7 +186,7 @@ export default function ClientesPage() {
       </section>
 
       {/* CTA Final */}
-      <div className="text-center bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-3xl p-12 shadow-2xl">
+      <div className="text-center bg-gradient-to-br from-slate-800 via-slate-900 to-gray-900 text-white rounded-3xl p-12 shadow-2xl border border-gray-700">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           ¿Listo para Iniciar tu Proyecto Digital?
         </h2>
@@ -196,13 +196,13 @@ export default function ClientesPage() {
         <div className="flex flex-col md:flex-row gap-4 justify-center">
           <a
             href="/contactenos"
-            className="bg-white text-blue-600 px-10 py-4 rounded-full hover:bg-gray-100 hover:shadow-xl transition-all font-semibold text-lg inline-block"
+            className="bg-white text-slate-900 px-10 py-4 rounded-full hover:bg-gray-100 hover:shadow-xl transition-all font-semibold text-lg inline-block"
           >
             Contáctanos
           </a>
           <a
             href="/proyectos-web"
-            className="bg-white/20 backdrop-blur text-white border-2 border-white px-10 py-4 rounded-full hover:bg-white/30 transition-all font-semibold text-lg inline-block"
+            className="bg-white/10 backdrop-blur text-white border-2 border-white/50 px-10 py-4 rounded-full hover:bg-white/20 hover:border-white transition-all font-semibold text-lg inline-block"
           >
             Ver Proyectos
           </a>

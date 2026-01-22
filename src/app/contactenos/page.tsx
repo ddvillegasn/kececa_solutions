@@ -1,5 +1,9 @@
 "use client";
 
+import { Metadata } from "next";
+
+// Note: metadata export doesn't work in client components, will need to move to page wrapper or use different approach
+
 // No hooks necesarios para FormSubmit
 
 export default function ContactenosPage() {
@@ -161,7 +165,9 @@ export default function ContactenosPage() {
               Contactar por WhatsApp
             </a>
             <a
-              href="mailto:integrasasolutions@gmail.com?subject=Quiero%20impulsar%20mi%20negocio&body=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20sus%20servicios%20digitales."
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=integrasasolutions@gmail.com&su=Quiero%20impulsar%20mi%20negocio&body=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20sus%20servicios%20digitales."
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-lg transition-colors"
               style={{ textDecoration: 'none' }}
             >

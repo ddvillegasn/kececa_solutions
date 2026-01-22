@@ -1,0 +1,22 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog y Noticias de Tecnología",
+  description: "Últimas noticias sobre tecnología, desarrollo web, inteligencia artificial, automatización y transformación digital. Mantente actualizado con tendencias del sector.",
+  keywords: [
+    "blog tecnología",
+    "noticias desarrollo web",
+    "tendencias digitales",
+    "inteligencia artificial",
+    "transformación digital",
+    "noticias tech Colombia"
+  ],
+  openGraph: {
+    title: "Blog y Noticias - INTEGRA SOLUTIONS",
+    description: "Últimas tendencias en tecnología y desarrollo digital.",
+    url: "https://www.integra-solutions.com/noticias",
+  },
+  alternates: {
+    canonical: "https://www.integra-solutions.com/noticias",
+  },
+};
