@@ -59,11 +59,24 @@ export default function VisualServiceCard({ title, description, image, icon, del
         ref={imageRef}
         className="relative h-64 overflow-hidden"
       >
-        <img 
-          src={image} 
-          alt={title}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcSet={`${image.replace('/assets/images/', '/assets/images-optimized/').replace(/\.(jpg|jpeg|png)$/i, '')}-mobile.webp 400w,
+                     ${image.replace('/assets/images/', '/assets/images-optimized/').replace(/\.(jpg|jpeg|png)$/i, '')}-tablet.webp 800w,
+                     ${image.replace('/assets/images/', '/assets/images-optimized/').replace(/\.(jpg|jpeg|png)$/i, '')}-desktop.webp 1200w`}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+          <img 
+            src={image.replace('/assets/images/', '/assets/images-optimized/').replace(/\.(jpg|jpeg|png)$/i, '-desktop.webp')}
+            alt={title}
+            width={1200}
+            height={800}
+            loading="lazy"
+            decoding="async"
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+        </picture>
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
         

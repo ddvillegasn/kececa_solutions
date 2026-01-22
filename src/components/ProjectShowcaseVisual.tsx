@@ -96,12 +96,25 @@ export default function ProjectShowcaseVisual({ projects }: ProjectShowcaseProps
         >
           {/* Imagen de portada del proyecto, sin degradado ni overlays */}
           <div className="absolute inset-0">
-            <img
-              src={project.image}
-              alt={project.title}
-              className={`w-full h-full object-cover transition-all duration-500 ${hoveredId === project.id ? 'scale-105' : 'scale-100'} bg-white`}
-              style={{ borderRadius: '1rem' }}
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`${project.image.replace('/assets/images/', '/assets/images-optimized/').replace(/\.(jpg|jpeg|png)$/i, '')}-mobile.webp 400w,
+                         ${project.image.replace('/assets/images/', '/assets/images-optimized/').replace(/\.(jpg|jpeg|png)$/i, '')}-tablet.webp 800w,
+                         ${project.image.replace('/assets/images/', '/assets/images-optimized/').replace(/\.(jpg|jpeg|png)$/i, '')}-desktop.webp 1200w`}
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              />
+              <img
+                src={project.image.replace('/assets/images/', '/assets/images-optimized/').replace(/\.(jpg|jpeg|png)$/i, '-desktop.webp')}
+                alt={project.title}
+                width={1200}
+                height={800}
+                loading="lazy"
+                decoding="async"
+                className={`w-full h-full object-cover transition-all duration-500 ${hoveredId === project.id ? 'scale-105' : 'scale-100'} bg-white`}
+                style={{ borderRadius: '1rem' }}
+              />
+            </picture>
           </div>
 
           {/* Content Overlay */}

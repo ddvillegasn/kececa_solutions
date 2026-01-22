@@ -281,11 +281,23 @@ export default function Home() {
                 
                 {/* Imagen Flotante */}
                 <div className="absolute -bottom-8 -right-8 w-48 h-48 rounded-xl overflow-hidden shadow-xl border-4 border-white dark:border-gray-800 hidden md:block">
-                  <img 
-                    src="/assets/images/cafe oficina.jpg" 
-                    alt="Equipo de trabajo"
-                    className="w-full h-full object-cover"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcSet="/assets/images-optimized/cafe oficina-mobile.webp 400w,
+                              /assets/images-optimized/cafe oficina-tablet.webp 800w"
+                      sizes="200px"
+                    />
+                    <img 
+                      src="/assets/images-optimized/cafe oficina-mobile.webp"
+                      alt="Equipo de trabajo"
+                      width={400}
+                      height={500}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
+                  </picture>
                 </div>
               </div>
             </FadeIn>
@@ -329,11 +341,24 @@ export default function Home() {
       <section className="py-20 relative overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <img 
-            src="/assets/images/oficina trabajo.jpg" 
-            alt="Background"
-            className="w-full h-full object-cover"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet="/assets/images-optimized/oficina trabajo-mobile.webp 400w,
+                      /assets/images-optimized/oficina trabajo-tablet.webp 800w,
+                      /assets/images-optimized/oficina trabajo-desktop.webp 1200w"
+              sizes="100vw"
+            />
+            <img 
+              src="/assets/images-optimized/oficina trabajo-desktop.webp"
+              alt="Background"
+              width={1200}
+              height={800}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-full object-cover"
+            />
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 via-blue-900/90 to-purple-900/95"></div>
         </div>
 

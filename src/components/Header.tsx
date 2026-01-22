@@ -31,11 +31,24 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo - Más grande y visible */}
           <Link href="/" className="flex items-center space-x-2 group -my-2">
-            <img 
-              src="/assets/images/Logo integra.png" 
-              alt="INTEGRADAV SAS" 
-              className="h-32 md:h-40 w-auto transition-transform duration-300 group-hover:scale-110 drop-shadow-2xl"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="/assets/images-optimized/Logo integra-mobile.webp 400w,
+                        /assets/images-optimized/Logo integra-tablet.webp 800w"
+                sizes="160px"
+              />
+              <img 
+                src="/assets/images-optimized/Logo integra-mobile.webp"
+                alt="INTEGRADAV SAS" 
+                width={160}
+                height={160}
+                loading="eager"
+                decoding="sync"
+                fetchpriority="high"
+                className="h-32 md:h-40 w-auto transition-transform duration-300 group-hover:scale-110 drop-shadow-2xl"
+              />
+            </picture>
           </Link>
 
           {/* Desktop Navigation */}
