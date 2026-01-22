@@ -45,7 +45,6 @@ export default function Header() {
                 height={160}
                 loading="eager"
                 decoding="sync"
-                fetchpriority="high"
                 className="h-32 md:h-40 w-auto transition-transform duration-300 group-hover:scale-110 drop-shadow-2xl"
               />
             </picture>
