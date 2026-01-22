@@ -1,11 +1,11 @@
-# Robots.txt - INTEGRA SOLUTIONS
+# Robots.txt - INTEGRADAV SAS
 # Permitir el rastreo completo del sitio
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.integra-solutions.com/sitemap.xml
+Sitemap: https://www.integradavsas.com/sitemap.xml
 
 # Bloquear archivos innecesarios
 Disallow: /api/

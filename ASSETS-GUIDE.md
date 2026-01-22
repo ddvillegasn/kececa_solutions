@@ -1,4 +1,4 @@
-# 📸 Guía de Assets para INTEGRA SOLUTIONS
+# 📸 Guía de Assets para INTEGRADAV SAS
 
 ## 🎯 Assets Necesarios para tu Página Web
 

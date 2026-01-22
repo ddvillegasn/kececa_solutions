@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 // Open Graph Image (1200x630)
-export const alt = 'INTEGRA SOLUTIONS - Soluciones Digitales en Colombia'
+export const alt = 'INTEGRADAV SAS - Soluciones Digitales en Colombia'
 export const size = {
   width: 1200,
   height: 630,
@@ -42,7 +42,7 @@ export default async function Image() {
               display: 'flex',
             }}
           >
-            INTEGRA SOLUTIONS
+            INTEGRADAV SAS
           </div>
         </div>
         

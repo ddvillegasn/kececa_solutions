@@ -1,4 +1,4 @@
-# 📋 Resumen de Organización de Assets - INTEGRA SOLUTIONS
+# 📋 Resumen de Organización de Assets - INTEGRADAV SAS
 
 ## ✅ IMÁGENES Y VIDEOS INTEGRADOS
 

@@ -33,7 +33,7 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-2 group -my-2">
             <img 
               src="/assets/images/Logo integra.png" 
-              alt="INTEGRA SOLUTIONS" 
+              alt="INTEGRADAV SAS" 
               className="h-32 md:h-40 w-auto transition-transform duration-300 group-hover:scale-110 drop-shadow-2xl"
             />
           </Link>

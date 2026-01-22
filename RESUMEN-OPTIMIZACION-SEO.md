@@ -1,4 +1,4 @@
-# 🎉 OPTIMIZACIÓN SEO COMPLETADA - INTEGRA SOLUTIONS
+# 🎉 OPTIMIZACIÓN SEO COMPLETADA - INTEGRADAV SAS
 
 ## ✅ RESUMEN EJECUTIVO
 
@@ -115,14 +115,14 @@ Crear y agregar estas imágenes en `/public/`:
 
 ### Paso 2: Google Search Console
 1. Ir a: https://search.google.com/search-console
-2. Agregar propiedad: `https://www.integra-solutions.com`
+2. Agregar propiedad: `https://www.integradavsas.com`
 3. Verificar con el código en metadata (ya incluido)
-4. Enviar sitemap: `https://www.integra-solutions.com/sitemap.xml`
+4. Enviar sitemap: `https://www.integradavsas.com/sitemap.xml`
 
 ### Paso 3: Google My Business
 1. Crear perfil en: https://business.google.com
 2. Completar información:
-   - Nombre: INTEGRA SOLUTIONS
+   - Nombre: INTEGRADAV SAS
    - Categoría: Agencia de Marketing Digital
    - Dirección exacta
    - Teléfono: +57 320 415 3533
@@ -139,7 +139,7 @@ Crear y agregar estas imágenes en `/public/`:
 ### Paso 5: Actualizar Dominio
 En `/src/app/layout.tsx` línea 8, cambiar:
 ```typescript
-metadataBase: new URL('https://www.integra-solutions.com'),
+metadataBase: new URL('https://www.integradavsas.com'),
 ```
 Por tu dominio real una vez lo tengas.
 
@@ -250,10 +250,10 @@ Tu sitio web está ahora **100% optimizado** para SEO profesional. Has implement
 
 ## 📞 CONTACTO
 
-**INTEGRA SOLUTIONS**
+**INTEGRADAV SAS**
 - 📧 Email: integrasasolutions@gmail.com
 - 📱 WhatsApp: +57 320 415 3533
-- 🌐 Web: www.integra-solutions.com
+- 🌐 Web: www.integradavsas.com
 
 ---
 

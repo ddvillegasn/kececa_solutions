@@ -1,4 +1,4 @@
-# 📝 ESTRATEGIA DE CONTENIDO SEO - INTEGRA SOLUTIONS
+# 📝 ESTRATEGIA DE CONTENIDO SEO - INTEGRADAV SAS
 
 ## 🎯 Keywords Objetivo por Prioridad
 
@@ -56,7 +56,7 @@
 
 ### Landing Page 1: Por Ciudad
 **URL:** `/desarrollo-web-pereira`
-- **H1:** Desarrollo Web Profesional en Pereira | INTEGRA SOLUTIONS
+- **H1:** Desarrollo Web Profesional en Pereira | INTEGRADAV SAS
 - **Contenido:** Servicios específicos para Pereira, casos locales, testimonios
 - **CTA:** Cotización gratuita para empresas de Pereira
 
@@ -164,7 +164,7 @@
 ✅ Bueno: "desarrollo-web-profesional-colombia-laptop.webp"
 
 ❌ Malo: alt="imagen"
-✅ Bueno: alt="Desarrollo web profesional para empresas en Colombia - INTEGRA SOLUTIONS"
+✅ Bueno: alt="Desarrollo web profesional para empresas en Colombia - INTEGRADAV SAS"
 
 ---
 

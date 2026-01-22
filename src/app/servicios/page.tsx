@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     "mantenimiento web"
   ],
   openGraph: {
-    title: "Servicios Digitales - INTEGRA SOLUTIONS",
+    title: "Servicios Digitales - INTEGRADAV SAS",
     description: "Desarrollo web, chatbots IA, automatización y sistemas personalizados para impulsar tu negocio.",
-    url: "https://www.integra-solutions.com/servicios",
+    url: "https://www.integradavsas.com/servicios",
   },
   alternates: {
-    canonical: "https://www.integra-solutions.com/servicios",
+    canonical: "https://www.integradavsas.com/servicios",
   },
 };
 

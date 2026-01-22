@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              INTEGRA SOLUTIONS
+              INTEGRADAV SAS
             </h3>
             <p className="text-gray-400 mb-4">
               Agencia de servicios digitales y automatización tecnológica para negocios, emprendedores y pequeñas empresas.
@@ -99,7 +99,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} INTEGRA SOLUTIONS. Todos los derechos reservados.</p>
+          <p>&copy; {currentYear} INTEGRADAV SAS. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

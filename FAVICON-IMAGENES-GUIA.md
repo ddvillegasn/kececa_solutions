@@ -19,7 +19,7 @@ Ubicación: `/public/assets/images/og-image.jpg`
 - Peso: Máximo 8 MB (recomendado < 300 KB)
 
 **Contenido sugerido:**
-- Logo de INTEGRA SOLUTIONS prominente
+- Logo de INTEGRADAV SAS prominente
 - Texto: "Desarrollo Web | Chatbots IA | Automatización"
 - Fondo atractivo (puede usar los colores de la marca)
 - Diseño simple y legible
@@ -86,14 +86,14 @@ Ubicación: `/public/assets/images/logo.png`
 ```
 ┌─────────────────────────────────────┐
 │                                     │
-│     [LOGO INTEGRA SOLUTIONS]        │
+│     [LOGO INTEGRADAV SAS]           │
 │                                     │
 │   Desarrollo Web | Chatbots IA     │
 │      Automatización Digital         │
 │                                     │
 │     🌐 💬 ⚙️ 🤖 📱                │
 │                                     │
-│    www.integra-solutions.com        │
+│    www.integradavsas.com            │
 │                                     │
 └─────────────────────────────────────┘
      1200px x 630px

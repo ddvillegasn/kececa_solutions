@@ -11,11 +11,11 @@ export const metadata: Metadata = {
     "experiencia comprobada"
   ],
   openGraph: {
-    title: "Clientes y Aliados - INTEGRA SOLUTIONS",
+    title: "Clientes y Aliados - INTEGRADAV SAS",
     description: "Experiencia en proyectos académicos y colaboraciones institucionales.",
-    url: "https://www.integra-solutions.com/clientes",
+    url: "https://www.integradavsas.com/clientes",
   },
   alternates: {
-    canonical: "https://www.integra-solutions.com/clientes",
+    canonical: "https://www.integradavsas.com/clientes",
   },
 };

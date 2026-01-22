@@ -16,7 +16,7 @@ export default function ClientesPage() {
       <section className="mb-20">
         <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-12 shadow-lg">
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-            En INTEGRA SOLUTIONS, nuestros primeros proyectos han sido desarrollados en <strong>entornos académicos</strong> y en <strong>iniciativas propias</strong>, trabajando en conjunto con docentes, jurados universitarios y equipos de desarrollo.
+            En INTEGRADAV SAS, nuestros primeros proyectos han sido desarrollados en <strong>entornos académicos</strong> y en <strong>iniciativas propias</strong>, trabajando en conjunto con docentes, jurados universitarios y equipos de desarrollo.
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             Estos proyectos han sido ejecutados bajo criterios profesionales de análisis, diseño, desarrollo y validación, permitiéndonos construir una base sólida de experiencia técnica y metodológica.

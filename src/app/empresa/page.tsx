@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Sobre Nosotros - Agencia Digital en Colombia",
-  description: "Conoce INTEGRA SOLUTIONS, agencia de servicios digitales especializada en desarrollo web, automatización y sistemas personalizados. Impulsamos PYMES y negocios locales con tecnología moderna.",
+  description: "Conoce INTEGRADAV SAS, agencia de servicios digitales especializada en desarrollo web, automatización y sistemas personalizados. Impulsamos PYMES y negocios locales con tecnología moderna.",
   keywords: [
     "agencia digital Colombia",
     "empresa desarrollo web",
@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     "Eje Cafetero tecnología"
   ],
   openGraph: {
-    title: "Sobre INTEGRA SOLUTIONS - Agencia Digital",
+    title: "Sobre INTEGRADAV SAS - Agencia Digital",
     description: "Agencia de servicios digitales enfocada en transformar negocios con tecnología accesible y efectiva.",
-    url: "https://www.integra-solutions.com/empresa",
+    url: "https://www.integradavsas.com/empresa",
   },
   alternates: {
-    canonical: "https://www.integra-solutions.com/empresa",
+    canonical: "https://www.integradavsas.com/empresa",
   },
 };
 
@@ -24,7 +24,7 @@ export default function EmpresaPage() {
   return (
     <div className="container mx-auto px-4 pt-40 pb-16">
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">INTEGRA SOLUTIONS - Agencia Digital en Colombia</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">INTEGRADAV SAS - Agencia Digital en Colombia</h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
           Agencia de servicios digitales y automatización tecnológica para negocios, emprendedores y pequeñas empresas en el Eje Cafetero y toda Colombia.
         </p>
@@ -34,7 +34,7 @@ export default function EmpresaPage() {
         <section className="mb-12">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">¿Quiénes Somos?</h2>
           <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-            Integra Solutions es una agencia de servicios digitales y automatización tecnológica enfocada en ayudar a negocios, emprendedores y pequeñas empresas a crecer, vender más y operar de forma más eficiente mediante soluciones digitales modernas, accesibles y bien implementadas.<br /><br />
+            INTEGRADAV SAS es una agencia de servicios digitales y automatización tecnológica enfocada en ayudar a negocios, emprendedores y pequeñas empresas a crecer, vender más y operar de forma más eficiente mediante soluciones digitales modernas, accesibles y bien implementadas.<br /><br />
             No solo creamos páginas web: construimos sistemas, automatizamos procesos y conectamos la tecnología con las necesidades reales del negocio. Nuestro enfoque combina desarrollo web, automatización inteligente, sistemas personalizados y acompañamiento continuo.<br /><br />
             <span className="font-semibold text-blue-900 dark:text-blue-400">La tecnología debe simplificar, no complicar.</span>
           </p>
@@ -96,7 +96,7 @@ export default function EmpresaPage() {
             <li>Desarrollamos sistemas personalizados, no soluciones genéricas.</li>
             <li>Pensamos como ingenieros, pero comunicamos como aliados del negocio.</li>
             <li>Nos enfocamos en negocios locales y PYMES, no en grandes corporaciones inalcanzables.</li>
-            <li>En INTEGRA Solutions, la cercanía y el acompañamiento son parte de nuestro ADN.</li>
+            <li>En INTEGRADAV SAS, la cercanía y el acompañamiento son parte de nuestro ADN.</li>
           </ul>
         </section>
 

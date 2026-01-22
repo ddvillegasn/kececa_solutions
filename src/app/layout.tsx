@@ -6,10 +6,10 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { Analytics } from "@/components/Analytics";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.integra-solutions.com'),
+  metadataBase: new URL('https://www.integradavsas.com'),
   title: {
-    default: "INTEGRA SOLUTIONS - Desarrollo Web, Chatbots IA y Automatización | Colombia",
-    template: "%s | INTEGRA SOLUTIONS"
+    default: "INTEGRADAV SAS - Desarrollo Web, Chatbots IA y Automatización | Colombia",
+    template: "%s | INTEGRADAV SAS"
   },
   description: "Agencia digital en Colombia especializada en desarrollo web profesional, chatbots con IA, automatización de procesos y sistemas personalizados. Transformamos negocios locales y PYMES con tecnología moderna. ☎️ +57 320 415 3533",
   keywords: [
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     "desarrollo web PYMES",
     "soluciones digitales empresas"
   ],
-  authors: [{ name: "INTEGRA SOLUTIONS" }],
-  creator: "INTEGRA SOLUTIONS",
-  publisher: "INTEGRA SOLUTIONS",
+  authors: [{ name: "INTEGRADAV SAS" }],
+  creator: "INTEGRADAV SAS",
+  publisher: "INTEGRADAV SAS",
   formatDetection: {
     email: true,
     address: true,
@@ -42,25 +42,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_CO",
-    url: "https://www.integra-solutions.com",
-    siteName: "INTEGRA SOLUTIONS",
-    title: "INTEGRA SOLUTIONS - Desarrollo Web, Chatbots IA y Automatización",
+    url: "https://www.integradavsas.com",
+    siteName: "INTEGRADAV SAS",
+    title: "INTEGRADAV SAS - Desarrollo Web, Chatbots IA y Automatización",
     description: "Agencia digital en Colombia. Desarrollo web profesional, chatbots con IA, automatización y sistemas personalizados para PYMES. Transformamos tu negocio con tecnología.",
     images: [
       {
         url: "/assets/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "INTEGRA SOLUTIONS - Soluciones Digitales"
+        alt: "INTEGRADAV SAS - Soluciones Digitales"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "INTEGRA SOLUTIONS - Desarrollo Web y Chatbots IA",
+    title: "INTEGRADAV SAS - Desarrollo Web y Chatbots IA",
     description: "Desarrollo web, chatbots con IA y automatización para empresas en Colombia. Transformamos negocios con tecnología.",
     images: ["/assets/images/og-image.jpg"],
-    creator: "@integrasolutions"
+    creator: "@integradavsas"
   },
   robots: {
     index: true,
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.integra-solutions.com",
+    canonical: "https://www.integradavsas.com",
   },
   category: "technology",
   // Agregar código de verificación cuando tengas Google Search Console
@@ -92,10 +92,10 @@ export default function RootLayout({
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "INTEGRA SOLUTIONS",
-    "alternateName": "Integra Solutions Colombia",
-    "url": "https://www.integra-solutions.com",
-    "logo": "https://www.integra-solutions.com/assets/images/logo.png",
+    "name": "INTEGRADAV SAS",
+    "alternateName": "INTEGRADAV SAS Colombia",
+    "url": "https://www.integradavsas.com",
+    "logo": "https://www.integradavsas.com/assets/images/logo.png",
     "description": "Agencia digital especializada en desarrollo web, chatbots con IA, automatización y sistemas personalizados para empresas en Colombia",
     "email": "integrasasolutions@gmail.com",
     "telephone": "+573204153533",
@@ -105,13 +105,13 @@ export default function RootLayout({
       "addressRegion": "Eje Cafetero"
     },
     "sameAs": [
-      "https://www.facebook.com/integrasolutions",
-      "https://www.instagram.com/integrasolutions",
-      "https://www.linkedin.com/company/integrasolutions"
+      "https://www.facebook.com/integradavsas",
+      "https://www.instagram.com/integradavsas",
+      "https://www.linkedin.com/company/integradavsas"
     ],
     "founder": {
       "@type": "Person",
-      "name": "INTEGRA SOLUTIONS Team"
+      "name": "INTEGRADAV SAS Team"
     }
   };
 
@@ -119,9 +119,9 @@ export default function RootLayout({
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "INTEGRA SOLUTIONS",
-    "image": "https://www.integra-solutions.com/assets/images/logo.png",
-    "url": "https://www.integra-solutions.com",
+    "name": "INTEGRADAV SAS",
+    "image": "https://www.integradavsas.com/assets/images/logo.png",
+    "url": "https://www.integradavsas.com",
     "telephone": "+573204153533",
     "email": "integrasasolutions@gmail.com",
     "priceRange": "$$",
@@ -154,9 +154,9 @@ export default function RootLayout({
   const professionalServiceSchema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "INTEGRA SOLUTIONS - Desarrollo Web y Automatización",
+    "name": "INTEGRADAV SAS - Desarrollo Web y Automatización",
     "description": "Servicios de desarrollo web profesional, chatbots con IA, automatización empresarial y sistemas personalizados",
-    "url": "https://www.integra-solutions.com",
+    "url": "https://www.integradavsas.com",
     "telephone": "+573204153533",
     "email": "integrasasolutions@gmail.com",
     "areaServed": {

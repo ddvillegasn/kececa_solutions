@@ -51,8 +51,8 @@ const nextConfig: NextConfig = {
       // Ejemplo: redirigir www a non-www o viceversa
       // {
       //   source: '/:path*',
-      //   has: [{ type: 'host', value: 'www.integra-solutions.com' }],
-      //   destination: 'https://integra-solutions.com/:path*',
+      //   has: [{ type: 'host', value: 'www.integradavsas.com' }],
+      //   destination: 'https://integradavsas.com/:path*',
       //   permanent: true,
       // },
     ];
