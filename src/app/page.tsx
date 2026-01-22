@@ -16,13 +16,16 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
         {/* Video Background desde Cloudinary */}
         <div className="absolute inset-0 w-full h-full overflow-hidden">
-          <iframe
-            src="https://player.cloudinary.com/embed/?cloud_name=dolwsuiqy&public_id=red_neuronal_azul_ecw9ga&fluid=true&controls=false&autoplay=true&loop=true&muted=true"
-            className="absolute inset-0 w-full h-full object-cover"
-            style={{ opacity: 0.7, pointerEvents: 'none' }}
-            allow="autoplay; fullscreen; encrypted-media"
-            frameBorder="0"
-          />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover opacity-70"
+            style={{ pointerEvents: 'none' }}
+          >
+            <source src="https://res.cloudinary.com/dolwsuiqy/video/upload/q_auto,f_auto,w_1280/red_neuronal_azul_ecw9ga.mp4" type="video/mp4" />
+          </video>
           {/* Overlay más sutil para que se vea el video */}
           <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-transparent to-black/60" />
         </div>
