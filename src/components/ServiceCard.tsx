@@ -1,5 +1,8 @@
+
+import { ReactNode } from "react";
+
 interface ServiceCardProps {
-  icon: string;
+  icon: ReactNode;
   title: string;
   description: string;
   features?: string[];
