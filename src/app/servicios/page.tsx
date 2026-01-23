@@ -28,35 +28,29 @@ export const metadata: Metadata = {
 export default function ServiciosPage() {
   return (
     <>
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-black mb-16">
-        {/* Fondo imagen tenue opcional */}
-        <img
-          src="/assets/images/desarrollo web.jpg"
-          alt="Fondo decorativo desarrollo web"
-          className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none select-none hidden md:block"
-          aria-hidden="true"
-        />
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#14192A] via-[#1B2240] to-black mb-16">
+        {/* Fondo imagen tenue removido para fondo blanco visible */}
         <div className="container mx-auto px-4 pt-40 pb-16 relative z-10 grid md:grid-cols-2 gap-8 items-center">
           {/* Lado Izquierdo: Texto */}
           <div className="text-left md:pr-8">
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-blue-900 dark:text-white tracking-tight">
-              Servicios Digitales Profesionales
+            <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-white tracking-tight">
+              Soluciones Digitales a tu Medida
             </h1>
-            <h2 className="text-xl md:text-2xl font-semibold mb-4 text-blue-700 dark:text-blue-300">
-              Soluciones web, automatización y tecnología a tu medida
+            <h2 className="text-xl md:text-2xl font-semibold mb-4 text-blue-200">
+              Webs profesionales, automatización y tecnología para crecer
             </h2>
-            <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 mb-6 max-w-xl">
-              Impulsa tu negocio, emprendimiento o marca personal con páginas web profesionales, automatización de procesos, chatbots inteligentes y sistemas personalizados. Todo lo que necesitas para crecer, innovar y destacar en el mundo digital, en un solo lugar.
+            <p className="text-base md:text-lg text-gray-200 mb-6 max-w-xl">
+              Lleva tu negocio, emprendimiento o marca personal al siguiente nivel con páginas web modernas, procesos automatizados, chatbots inteligentes y sistemas personalizados. Todo lo que necesitas para destacar e innovar en el mundo digital, en un solo lugar.
             </p>
             <a href="/contactenos" className="inline-block bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition text-lg shadow-lg">
-              Solicita tu asesoría gratis
+              Agenda tu asesoría gratuita
             </a>
           </div>
           {/* Lado Derecho: Ícono/Ilustración */}
           <div className="flex justify-center md:justify-end">
             <div className="flex items-center justify-center w-full h-full">
               <img
-                src="/assets/images/oficina trabajo.jpg"
+                src="/assets/images/fondo animado.png"
                 alt="Equipo profesional trabajando"
                 className="rounded-xl object-cover w-72 h-56 md:w-96 md:h-64 shadow-2xl"
                 style={{ maxWidth: '100%', height: 'auto' }}
