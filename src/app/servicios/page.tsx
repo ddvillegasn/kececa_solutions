@@ -244,7 +244,7 @@ export default function ServiciosPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl">
             
             {/* PLAN 1 - Presencia Digital */}
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 border-2 border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300 flex flex-col">
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 border-2 border-gray-200 dark:border-gray-700 hover:shadow-2xl hover:scale-105 transition-all duration-300 flex flex-col">
               <div className="mb-6">
                 <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Ideal para empezar</span>
                 <h3 className="text-2xl font-bold mt-2 text-gray-900 dark:text-white">Presencia Digital</h3>
@@ -295,7 +295,7 @@ export default function ServiciosPage() {
             </div>
 
             {/* PLAN 2 - Web Profesional ⭐ RECOMENDADO */}
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900 dark:to-indigo-900 rounded-2xl shadow-2xl p-8 border-4 border-blue-500 dark:border-blue-400 relative hover:shadow-3xl transition-all duration-300 transform lg:scale-105 flex flex-col">
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900 dark:to-indigo-900 rounded-2xl shadow-2xl p-8 border-4 border-blue-500 dark:border-blue-400 relative hover:shadow-3xl hover:scale-110 transition-all duration-300 transform lg:scale-105 flex flex-col">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
                 <span className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg inline-flex items-center gap-2">
                   <span>⭐</span>
@@ -356,7 +356,7 @@ export default function ServiciosPage() {
             </div>
 
             {/* PLAN 3 - Negocio Digital */}
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 border-2 border-purple-200 dark:border-purple-700 hover:shadow-xl transition-all duration-300 flex flex-col">
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 border-2 border-purple-200 dark:border-purple-700 hover:shadow-2xl hover:scale-105 transition-all duration-300 flex flex-col">
               <div className="mb-6">
                 <span className="text-sm font-semibold text-purple-600 uppercase tracking-wide">Solución completa</span>
                 <h3 className="text-2xl font-bold mt-2 text-gray-900 dark:text-white">Negocio Digital</h3>
@@ -411,7 +411,7 @@ export default function ServiciosPage() {
             </div>
 
             {/* PLAN 4 - Solución Empresarial */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 dark:from-gray-800 dark:to-gray-900 rounded-2xl shadow-lg p-8 border-2 border-yellow-500 dark:border-yellow-400 hover:shadow-xl transition-all duration-300 flex flex-col">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 dark:from-gray-800 dark:to-gray-900 rounded-2xl shadow-lg p-8 border-2 border-yellow-500 dark:border-yellow-400 hover:shadow-2xl hover:scale-105 transition-all duration-300 flex flex-col">
               <div className="mb-6">
                 <span className="text-sm font-semibold text-yellow-400 uppercase tracking-wide">A medida</span>
                 <h3 className="text-2xl font-bold mt-2 text-white">Solución Empresarial</h3>
