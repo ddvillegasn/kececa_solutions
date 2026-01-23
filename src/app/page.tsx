@@ -21,10 +21,12 @@ export default function Home() {
             loop
             muted
             playsInline
+            preload="none"
+            poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Crect fill='%2314192A' width='1920' height='1080'/%3E%3C/svg%3E"
             className="absolute inset-0 w-full h-full object-cover opacity-70"
             style={{ pointerEvents: 'none' }}
           >
-            <source src="https://res.cloudinary.com/dolwsuiqy/video/upload/q_auto,f_auto,w_1280/red_neuronal_azul_ecw9ga.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dolwsuiqy/video/upload/q_auto:low,f_auto,w_1280/red_neuronal_azul_ecw9ga.mp4" type="video/mp4" />
           </video>
           {/* Overlay más sutil para que se vea el video */}
           <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-transparent to-black/60" />

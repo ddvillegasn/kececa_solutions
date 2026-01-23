@@ -5,10 +5,24 @@ const nextConfig: NextConfig = {
   
   // Optimizaciones SEO y rendimiento
   compress: true,
+  poweredByHeader: false,
+  generateEtags: true,
+  
+  // Configuración de compilación optimizada
+  swcMinify: true,
   
   // Headers de seguridad y SEO
   async headers() {
     return [
+      {
+        source: '/assets/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable'
+          }
+        ]
+      },
       {
         source: '/:path*',
         headers: [

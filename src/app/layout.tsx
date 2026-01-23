@@ -207,6 +207,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        {/* Preconnect para recursos externos críticos */}
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+        <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+        
         {/* Schema.org JSON-LD */}
         <script
           type="application/ld+json"
