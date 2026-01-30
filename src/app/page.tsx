@@ -38,7 +38,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-32 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-6xl md:text-8xl font-bold leading-tight text-white drop-shadow-2xl animate-fade-in mb-8">
-              INTEGRADAV SAS
+              INTEGRADAV
             </h1>
             <p className="text-2xl md:text-4xl text-white font-light drop-shadow-lg mb-8">
               Soluciones digitales que convierten en resultados reales
@@ -312,7 +312,7 @@ export default function Home() {
               
               <FadeIn delay={0.3}>
                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                  En <span className="font-semibold text-blue-600">INTEGRADAV SAS</span>, ayudamos a negocios locales, emprendedores y PYMES a modernizarse con tecnología práctica, accesible y enfocada en resultados.
+                  En <span className="font-semibold text-blue-600">INTEGRADAV</span>, ayudamos a negocios locales, emprendedores y PYMES a modernizarse con tecnología práctica, accesible y enfocada en resultados.
                 </p>
               </FadeIn>
 
@@ -406,12 +406,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Por qué elegir INTEGRADAV SAS - Versión Visual */}
+      {/* Por qué elegir INTEGRADAV - Versión Visual */}
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <TextReveal className="text-4xl md:text-5xl font-bold mb-4">
-              ¿Por qué INTEGRADAV SAS?
+              ¿Por qué INTEGRADAV?
             </TextReveal>
             <FadeIn delay={0.2}>
               <p className="text-xl text-gray-600 dark:text-gray-300">Tu aliado tecnológico de confianza</p>

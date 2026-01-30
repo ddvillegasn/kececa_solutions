@@ -12,11 +12,11 @@ export const metadata: Metadata = {
     "asesoría digital Colombia"
   ],
   openGraph: {
-    title: "Contacto - INTEGRADAV SAS",
+    title: "Contacto - INTEGRADAV",
     description: "Solicita tu cotización gratuita y transforma tu negocio con tecnología.",
-    url: "https://www.integradavsas.com/contactenos",
+    url: "https://www.integradav.com/contactenos",
   },
   alternates: {
-    canonical: "https://www.integradavsas.com/contactenos",
+    canonical: "https://www.integradav.com/contactenos",
   },
 };

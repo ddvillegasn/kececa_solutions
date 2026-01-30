@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     "plataformas gestión"
   ],
   openGraph: {
-    title: "Portfolio de Proyectos - INTEGRADAV SAS",
+    title: "Portfolio de Proyectos - INTEGRADAV",
     description: "Descubre nuestros proyectos de desarrollo web, sistemas empresariales y automatización.",
-    url: "https://www.integradavsas.com/proyectos-web",
+    url: "https://www.integradav.com/proyectos-web",
   },
   alternates: {
     canonical: "https://www.integradavsas.com/proyectos-web",

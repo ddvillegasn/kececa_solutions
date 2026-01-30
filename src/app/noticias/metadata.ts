@@ -12,11 +12,11 @@ export const metadata: Metadata = {
     "noticias tech Colombia"
   ],
   openGraph: {
-    title: "Blog y Noticias - INTEGRADAV SAS",
+    title: "Blog y Noticias - INTEGRADAV",
     description: "Últimas tendencias en tecnología y desarrollo digital.",
-    url: "https://www.integradavsas.com/noticias",
+    url: "https://www.integradav.com/noticias",
   },
   alternates: {
-    canonical: "https://www.integradavsas.com/noticias",
+    canonical: "https://www.integradav.com/noticias",
   },
 };

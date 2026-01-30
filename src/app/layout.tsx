@@ -6,10 +6,10 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { Analytics } from "@/components/Analytics";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.integradavsas.com'),
+  metadataBase: new URL('https://www.integradav.com'),
   title: {
-    default: "INTEGRADAV SAS - Desarrollo Web, Chatbots IA y Automatización | Colombia",
-    template: "%s | INTEGRADAV SAS"
+    default: "INTEGRADAV - Desarrollo Web, Chatbots IA y Automatización | Colombia",
+    template: "%s | INTEGRADAV"
   },
   description: "Agencia digital en Colombia especializada en desarrollo web profesional, chatbots con IA, automatización de procesos y sistemas personalizados. Transformamos negocios locales y PYMES con tecnología moderna. ☎️ +57 320 415 3533",
   keywords: [
@@ -19,8 +19,6 @@ export const metadata: Metadata = {
     "automatización empresarial",
     "diseño web profesional",
     "páginas web para empresas",
-    "sistemas personalizados",
-    "inteligencia artificial Colombia",
     "desarrollo software Colombia",
     "ecommerce Colombia",
     "tiendas online",
@@ -28,12 +26,11 @@ export const metadata: Metadata = {
     "desarrollo web Eje Cafetero",
     "chatbots con IA",
     "automatización procesos",
-    "desarrollo web PYMES",
     "soluciones digitales empresas"
   ],
-  authors: [{ name: "INTEGRADAV SAS" }],
-  creator: "INTEGRADAV SAS",
-  publisher: "INTEGRADAV SAS",
+  authors: [{ name: "INTEGRADAV" }],
+  creator: "INTEGRADAV",
+  publisher: "INTEGRADAV",
   formatDetection: {
     email: true,
     address: true,
@@ -42,28 +39,28 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_CO",
-    url: "https://www.integradavsas.com",
-    siteName: "INTEGRADAV SAS",
-    title: "INTEGRADAV SAS - Desarrollo Web, Chatbots IA y Automatización",
+    url: "https://www.integradav.com",
+    siteName: "INTEGRADAV",
+    title: "INTEGRADAV - Desarrollo Web, Chatbots IA y Automatización",
     description: "Agencia digital en Colombia. Desarrollo web profesional, chatbots con IA, automatización y sistemas personalizados para PYMES. Transformamos tu negocio con tecnología.",
     images: [
       {
         url: "/assets/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "INTEGRADAV SAS - Soluciones Digitales"
+        alt: "INTEGRADAV - Soluciones Digitales"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "INTEGRADAV SAS - Desarrollo Web y Chatbots IA",
+    title: "INTEGRADAV - Desarrollo Web y Chatbots IA",
     description: "Desarrollo web, chatbots con IA y automatización para empresas en Colombia. Transformamos negocios con tecnología.",
     images: ["/assets/images/og-image.jpg"],
-    creator: "@integradavsas"
+    creator: "@integradav"
   },
   robots: {
-    index: true,
+    "name": "INTEGRADAV - Desarrollo Web y Automatización",
     follow: true,
     googleBot: {
       index: true,
@@ -74,7 +71,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.integradavsas.com",
+    canonical: "https://www.integradav.com",
   },
   category: "technology",
   // Agregar código de verificación cuando tengas Google Search Console
@@ -92,10 +89,10 @@ export default function RootLayout({
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "INTEGRADAV SAS",
-    "alternateName": "INTEGRADAV SAS Colombia",
-    "url": "https://www.integradavsas.com",
-    "logo": "https://www.integradavsas.com/assets/images/logo.png",
+    "name": "INTEGRADAV",
+    "alternateName": "INTEGRADAV Colombia",
+    "url": "https://www.integradav.com",
+    "logo": "https://www.integradav.com/assets/images/logo.png",
     "description": "Agencia digital especializada en desarrollo web, chatbots con IA, automatización y sistemas personalizados para empresas en Colombia",
     "email": "integrasasolutions@gmail.com",
     "telephone": "+573204153533",
@@ -111,7 +108,7 @@ export default function RootLayout({
     ],
     "founder": {
       "@type": "Person",
-      "name": "INTEGRADAV SAS Team"
+      "name": "INTEGRADAV Team"
     }
   };
 

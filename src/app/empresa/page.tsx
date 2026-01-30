@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Sobre Nosotros - Agencia Digital en Colombia",
-  description: "Conoce INTEGRADAV SAS, agencia de servicios digitales especializada en desarrollo web, automatización y sistemas personalizados. Impulsamos PYMES y negocios locales con tecnología moderna.",
+  description: "Conoce INTEGRADAV, agencia de servicios digitales especializada en desarrollo web, automatización y sistemas personalizados. Impulsamos PYMES y negocios locales con tecnología moderna.",
   keywords: [
     "agencia digital Colombia",
     "empresa desarrollo web",
@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     "Eje Cafetero tecnología"
   ],
   openGraph: {
-    title: "Sobre INTEGRADAV SAS - Agencia Digital",
+    title: "Sobre INTEGRADAV - Agencia Digital",
     description: "Agencia de servicios digitales enfocada en transformar negocios con tecnología accesible y efectiva.",
-    url: "https://www.integradavsas.com/empresa",
+    url: "https://www.integradav.com/empresa",
   },
   alternates: {
-    canonical: "https://www.integradavsas.com/empresa",
+    canonical: "https://www.integradav.com/empresa",
   },
 };
 
@@ -31,7 +31,7 @@ export default function EmpresaPage() {
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <img
             src="/assets/images/oficina trabajo.jpg"
-            alt="Equipo INTEGRADAV SAS"
+            alt="Equipo INTEGRADAV"
             className="w-full h-full object-cover opacity-60"
             style={{ pointerEvents: 'none' }}
           />
@@ -39,7 +39,7 @@ export default function EmpresaPage() {
         </div>
         <div className="container mx-auto px-4 pt-36 pb-24 relative z-10 text-center">
           <TextReveal className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-2xl">
-            CONOCE A INTEGRADAV SAS
+            CONOCE A INTEGRADAV
           </TextReveal>
           <FadeIn delay={0.2}>
             <p className="text-2xl md:text-3xl text-white font-light max-w-2xl mx-auto mb-8 drop-shadow-lg">
@@ -56,7 +56,7 @@ export default function EmpresaPage() {
             <FadeIn direction="left">
               <img
                 src="/assets/images/cafe oficina.jpg"
-                alt="Oficina INTEGRADAV SAS"
+                alt="Oficina INTEGRADAV"
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
             </FadeIn>

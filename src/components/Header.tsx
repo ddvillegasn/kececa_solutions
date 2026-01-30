@@ -40,7 +40,7 @@ export default function Header() {
               />
               <img 
                 src="/assets/images-optimized/Logo integra-mobile.webp"
-                alt="INTEGRADAV SAS" 
+                alt="INTEGRADAV" 
                 width={160}
                 height={160}
                 loading="eager"
