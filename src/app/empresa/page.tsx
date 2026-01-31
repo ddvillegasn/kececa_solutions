@@ -31,7 +31,7 @@ export default function EmpresaPage() {
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <img
             src="/assets/images/oficina trabajo.jpg"
-            alt="Equipo INTEGRADAV"
+            alt="CONOCE A INTEGRADAV"
             className="w-full h-full object-cover opacity-60"
             style={{ pointerEvents: 'none' }}
           />
@@ -56,7 +56,7 @@ export default function EmpresaPage() {
             <FadeIn direction="left">
               <img
                 src="/assets/images/cafe oficina.jpg"
-                alt="Oficina INTEGRADAV"
+                alt="Nuestro equipo en acción"
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
             </FadeIn>
@@ -180,7 +180,7 @@ export default function EmpresaPage() {
             <FadeIn direction="right">
               <img
                 src="/assets/images/oficina trabajo.jpg"
-                alt="Equipo profesional KECECA SOLUTIONS"
+                alt="Equipo profesional INTEGRADAV"
                 className="rounded-2xl shadow-2xl w-full max-w-2xl mx-auto object-cover min-h-[320px] min-w-[400px]"
                 style={{ aspectRatio: '16/7', objectPosition: 'center' }}
               />
@@ -196,12 +196,12 @@ export default function EmpresaPage() {
             ¿Listo para transformar tu empresa?
           </TextReveal>
           <FadeIn delay={0.2}>
-            <p className="text-xl md:text-2xl mb-8">Hablemos de tu proyecto y llevemos tu negocio al siguiente nivel.</p>
+            <p className="text-xl md:text-2xl mb-8">Conversemos sobre tu proyecto y exploremos cómo podemos apoyarte con soluciones digitales a la medida.</p>
             <a
               href="/contactenos"
               className="inline-block px-10 py-4 bg-white text-blue-700 font-semibold rounded-full hover:scale-105 hover:shadow-2xl transition-all text-lg"
             >
-              Contáctanos ahora
+              Contáctanos
             </a>
           </FadeIn>
         </div>

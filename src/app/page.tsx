@@ -37,7 +37,7 @@ export default function Home() {
         
         <div className="container mx-auto px-4 py-32 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
-            <h1 className="text-6xl md:text-8xl font-bold leading-tight text-white drop-shadow-2xl animate-fade-in mb-8">
+            <h1 className="text-4xl sm:text-5xl md:text-8xl font-bold leading-tight text-white drop-shadow-2xl animate-fade-in mb-8">
               INTEGRADAV
             </h1>
             <p className="text-2xl md:text-4xl text-white font-light drop-shadow-lg mb-8">

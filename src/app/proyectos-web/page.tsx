@@ -19,7 +19,7 @@ export default function ProyectosWebPage() {
     {
       title: "Conexa – Plataforma Web de Gestión de Recursos Humanos",
       description: "Plataforma web modular para centralizar y optimizar procesos de RRHH en empresas modernas.",
-      tags: ["Flask", "RRHH", "Contratación", "Liquidaciones", "Evaluación", "Web Modular"],
+      tags: ["Flask", "Web Modular", "RRHH", "Contratación", "Liquidaciones"],
       detalle: `Conexa es una plataforma web de gestión de recursos humanos (RRHH) diseñada para centralizar, organizar y optimizar los procesos administrativos de una empresa. La solución permite administrar de forma estructurada la información del personal, los procesos de selección y contratación, así como el seguimiento laboral de los colaboradores.\n\nEl sistema cuenta con una interfaz web modular que integra distintos componentes clave del área de RRHH, facilitando el control de datos, la trazabilidad de procesos y la toma de decisiones. Conexa está pensada como una herramienta interna que reduce el manejo manual de información y mejora la eficiencia operativa.\n\n**Funcionalidades principales**\n\n- Gestión de empleados: registro, consulta y administración de información del personal.\n- Selección y reclutamiento: manejo de vacantes, candidatos y procesos de selección.\n- Contratación: control y seguimiento de contratos laborales.\n- Seguridad social: administración de afiliaciones y estados relacionados.\n- Liquidaciones laborales: cálculo y gestión de liquidaciones.\n- Capacitación: registro de programas de formación y participantes.\n- Evaluación de desempeño: creación y almacenamiento de evaluaciones internas.\n\n**Tecnologías utilizadas**\n\n- Aplicación web desarrollada con Flask\n- Backend estructurado con lógica de servidor\n- Plantillas HTML y recursos estáticos (CSS y JavaScript)\n- Base de datos para persistencia de información\n- Arquitectura organizada para facilitar mantenimiento y escalabilidad\n\n**Valor del proyecto**\n\nConexa demuestra la capacidad de desarrollar sistemas empresariales personalizados, enfocados en resolver necesidades reales de gestión interna, con una arquitectura clara y preparada para ampliaciones futuras.`,
       images: [
         "/assets/images/CONEXA FOTOS/PRINCIPAL CONEXA.jpg",
@@ -47,7 +47,7 @@ export default function ProyectosWebPage() {
     {
       title: "Medidino – Sistema Integral de Gestión Médica",
       description: "Sistema web para gestión integral de información médica en clínicas, consultorios y farmacias.",
-      tags: ["Backend modular", "Web interactiva", "Inventario", "Pacientes", "Recetas"],
+      tags: ["Sistema Web", "Gestión Médica", "Inventario", "Pacientes", "Recetas", "HTML", "JavaScript"],
         detalle: `Medidino es un sistema web para la gestión integral de información médica, diseñado para apoyar a clínicas, consultorios y farmacias en la digitalización y control de sus procesos operativos. La plataforma centraliza la administración de pacientes, médicos, recetas y medicamentos, permitiendo un manejo organizado, seguro y trazable de la información clínica.\n\nEl sistema facilita la emisión y consulta de recetas médicas, el seguimiento del historial de pacientes y el control de inventarios de medicamentos, optimizando los flujos de trabajo y reduciendo errores derivados de la gestión manual.\n\n🔧 **Funcionalidades principales**\n\n- Gestión de pacientes: registro y consulta de información médica e historial clínico.\n- Gestión de médicos: administración de datos profesionales y asignaciones.\n- Recetas médicas: creación, consulta y control de recetas emitidas.\n- Medicamentos e inventario: control de stock, alertas y disponibilidad.\n- Reportes: generación de informes operativos y médicos.\n- Trazabilidad: seguimiento claro de la información y acciones realizadas en el sistema.\n\n🛠️ **Tecnologías utilizadas**\n\n- Backend desarrollado con arquitectura web modular\n- Integración de múltiples lenguajes para distintos componentes del sistema\n- Interfaz web interactiva y responsiva\n- Estructura preparada para crecimiento y adaptación a distintos entornos clínicos\n\n(La tecnología se selecciona según la necesidad del proyecto, priorizando estabilidad, seguridad y escalabilidad.)\n\n💡 **Valor del proyecto**\n\nMedidino demuestra la capacidad de INTEGRADAV SAS para desarrollar sistemas personalizados para sectores críticos, como el ámbito de la salud, donde la organización de la información, la trazabilidad y la eficiencia son fundamentales.`,
       images: [
         "/assets/images/MEDIDINO FOTOS/HOME .png",
@@ -60,7 +60,7 @@ export default function ProyectosWebPage() {
     {
       title: "Vitalis: Gestión Médica",
       description: "Plataforma web para gestión integral de pacientes, médicos, incapacidades y pagos en clínicas y consultorios.",
-      tags: ["Python", "Flask", "MySQL", "HTML", "CSS", "Jinja2"],
+      tags: ["Python", "Flask", "MySQL", "Web Admin", "Seguridad"],
       detalle: `Esta plataforma es una aplicación web orientada al sector salud, diseñada para optimizar la gestión de incapacidades médicas, usuarios y pagos dentro de clínicas o entidades prestadoras de servicios de salud.\n\nEl sistema permite a los pacientes registrar y consultar sus incapacidades, mientras que los administradores y personal autorizado pueden revisar, aprobar o rechazar solicitudes, llevar el control de pagos asociados y generar reportes mensuales en formato PDF para seguimiento y análisis administrativo.\n\nLa aplicación cuenta con un sistema de autenticación y control de acceso por roles, ofreciendo paneles diferenciados para pacientes, médicos y administradores, lo que garantiza seguridad, organización y una experiencia de uso clara según el perfil del usuario.\n\nA nivel técnico, el sistema está desarrollado con Python utilizando el framework Flask para la lógica del backend, MySQL como motor de base de datos y una interfaz web basada en HTML y CSS, apoyada en plantillas Jinja2 para una estructura dinámica y mantenible.\n\nEsta solución contribuye a la digitalización de procesos clínicos, mejora la trazabilidad de la información y reduce la gestión manual en entornos de salud.`,
       images: [
         "/assets/images/vitalis fotos/vitales home.png",
@@ -102,9 +102,9 @@ export default function ProyectosWebPage() {
   return (
     <div className="container mx-auto px-4 pt-40 pb-16">
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">Proyectos Web</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase">Proyectos Web Desarrollados por INTEGRADAV</h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Aquí te mostramos una selección real de los proyectos web desarrollados para nuestros clientes. Cada solución fue creada a la medida, priorizando calidad, seguridad y resultados tangibles para cada organización.
+          Aquí presentamos una selección de proyectos web desarrollados para clientes reales. Cada solución fue creada a la medida, priorizando funcionalidad, seguridad y resultados tangibles para cada organización.
         </p>
       </div>
 
@@ -348,7 +348,7 @@ export default function ProyectosWebPage() {
       <div className="mt-16 text-center">
         <h2 className="text-3xl font-bold mb-4">¿Tienes un proyecto en mente?</h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-          Convirtamos tu idea en realidad. Contáctanos para una consulta gratuita.
+          Convirtamos tu idea en realidad. Contáctanos y recibe una asesoría inicial sin costo.
         </p>
         <a
           href="/contactenos"

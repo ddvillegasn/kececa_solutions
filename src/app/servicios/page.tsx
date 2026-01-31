@@ -40,10 +40,10 @@ export default function ServiciosPage() {
               Webs profesionales, automatización y tecnología para crecer
             </h2>
             <p className="text-base md:text-lg text-gray-200 mb-6 max-w-xl">
-              Lleva tu negocio, emprendimiento o marca personal al siguiente nivel con páginas web modernas, procesos automatizados, chatbots inteligentes y sistemas personalizados. Todo lo que necesitas para destacar e innovar en el mundo digital, en un solo lugar.
+              Desarrollo web, automatización y soluciones tecnológicas diseñadas para optimizar procesos, mejorar la atención al cliente y fortalecer tu presencia digital.
             </p>
             <a href="/contactenos" className="inline-block bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition text-lg shadow-lg">
-              Agenda tu asesoría gratuita
+              Agenda una asesoría inicial
             </a>
           </div>
           {/* Lado Derecho: Ícono/Ilustración */}
@@ -101,7 +101,7 @@ export default function ServiciosPage() {
               </li>
               <li className="flex items-start gap-3 text-gray-700 dark:text-gray-300">
                 <svg className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
-                <span className="text-sm">Integración con WhatsApp y RRSS</span>
+                <span className="text-sm">Integración con WhatsApp y redes sociales</span>
               </li>
             </ul>
           </div>
@@ -138,7 +138,7 @@ export default function ServiciosPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
               </svg>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Chatbots con IA Avanzada</h3>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Chatbots con IA </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">Asistentes virtuales inteligentes que atienden tus clientes las 24 horas del día.</p>
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-gray-700 dark:text-gray-300">
@@ -193,7 +193,7 @@ export default function ServiciosPage() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-gray-700 dark:text-gray-300">
                 <svg className="w-5 h-5 text-pink-600 dark:text-pink-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
-                <span className="text-sm">SEO local y Google Business optimizado</span>
+                <span className="text-sm">SEO local y Google Business Profile optimizado</span>
               </li>
               <li className="flex items-start gap-3 text-gray-700 dark:text-gray-300">
                 <svg className="w-5 h-5 text-pink-600 dark:text-pink-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
@@ -236,6 +236,7 @@ export default function ServiciosPage() {
       <div className="mt-24 max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">Planes y Precios</h2>
+          <p className="text-base text-blue-700 dark:text-blue-300 font-medium mb-4">Todos nuestros planes incluyen acompañamiento profesional, buenas prácticas técnicas y soporte acorde al alcance del proyecto.</p>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Soluciones transparentes, sin letra pequeña. Inversión clara para negocios que quieren crecer con tecnología profesional.
           </p>
@@ -289,7 +290,7 @@ export default function ServiciosPage() {
                   rel="noopener noreferrer"
                   className="block w-full text-center bg-gray-800 dark:bg-gray-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 dark:hover:bg-gray-600 transition-colors"
                 >
-                  Agenda Asesoría Gratis
+                  Agendar asesoría inicial
                 </a>
               </div>
             </div>
@@ -350,7 +351,7 @@ export default function ServiciosPage() {
                   rel="noopener noreferrer"
                   className="block w-full text-center bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-lg font-bold hover:from-blue-700 hover:to-indigo-700 transition-all shadow-lg"
                 >
-                  Agendar Asesoría Gratis
+                  Agendar asesoría inicial
                 </a>
               </div>
             </div>
@@ -405,7 +406,7 @@ export default function ServiciosPage() {
                   rel="noopener noreferrer"
                   className="block w-full text-center bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
                 >
-                  Agenda Asesoría Gratis
+                  Agendar asesoría inicial
                 </a>
               </div>
             </div>
@@ -460,7 +461,7 @@ export default function ServiciosPage() {
                   rel="noopener noreferrer"
                   className="block w-full text-center bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors"
                 >
-                  Agenda Asesoría Gratis
+                  Agendar asesoría inicial
                 </a>
               </div>
             </div>
@@ -528,9 +529,9 @@ export default function ServiciosPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white text-center mt-32">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">¿Necesitas un servicio personalizado?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">¿Buscas una solución digital a la medida?</h2>
           <p className="text-lg md:text-xl text-gray-300 mb-8">
-            Contáctanos y cuéntanos sobre tu proyecto. Crearemos una solución a tu medida.
+            Conversemos sobre tu proyecto y evaluemos la mejor alternativa tecnológica según tus necesidades.
           </p>
           <a
             href="/contactenos"
