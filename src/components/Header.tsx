@@ -30,7 +30,7 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo - Más grande y visible */}
-          <Link href="/" className="flex items-center space-x-2 group -my-2">
+          <Link href="/" className="flex items-center justify-center w-full md:w-auto space-x-2 group -my-2">
             <picture>
               <source
                 type="image/webp"
