@@ -60,7 +60,6 @@ export const metadata: Metadata = {
     creator: "@integradav"
   },
   robots: {
-    "name": "INTEGRADAV - Desarrollo Web y Automatización",
     follow: true,
     googleBot: {
       index: true,
